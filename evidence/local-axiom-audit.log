@@ -1,0 +1,29 @@
+PASS: 3777 declarations, including 3176 theorems. All transitive axioms are among propext, Classical.choice, Quot.sound.
+@NivatTrial.TheoremB.periodic_of_low_convex_complexity : ∀ {A : Type u_1} [Fintype A] (θ : NivatTrial.Lattice → A)
+  (S : Finset NivatTrial.Lattice),
+  S.Nonempty →
+    NivatTrial.LatticePolygon.IsLatticeConvex S →
+      NivatTrial.patternComplexity θ S ≤ S.card → NivatTrial.Periodicity.IsPeriodic θ
+'NivatTrial.TheoremB.periodic_of_low_convex_complexity' depends on axioms: [propext, Classical.choice, Quot.sound]
+@NivatTrial.TheoremA.complexity_lower_bound : ∀ {ι : Type u_1} {α : Type u_2} [inst : Fintype ι] [Nontrivial ι]
+  [inst_2 : AddCommGroup α] [Fintype α] (T : NivatTrial.Star.Data ι α) (S : Finset NivatTrial.Algebra.G),
+  NivatTrial.LatticePolygon.IsLatticeConvex S → S.card + 1 ≤ NivatTrial.patternComplexity T.total S
+'NivatTrial.TheoremA.complexity_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+@NivatTrial.ColleRegionalConclusion.regional_configuration_of_low_complexity : ∀ {M n : ℕ}
+  (θ : NivatTrial.Lattice → Fin M) (S : Finset NivatTrial.Lattice),
+  S.Nonempty →
+    NivatTrial.LatticePolygon.IsLatticeConvex S →
+      NivatTrial.patternComplexity θ S ≤ S.card →
+        ¬NivatTrial.Periodicity.IsPeriodic θ →
+          NivatTrial.ExternalInputs.HasIntegerDecomposition (NivatTrial.ExternalInputs.integerField θ) n →
+            ∃ x ∈ NivatTrial.Dynamics.languageHull θ,
+              ¬NivatTrial.Periodicity.IsPeriodic x ∧
+                ∃ R,
+                  NivatTrial.RegionGeometry.LatticeConvexRegion R ∧
+                    R.Nonempty ∧
+                      ∃ a b,
+                        NivatTrial.Geometry.det a b ≠ 0 ∧
+                          NivatTrial.Periodicity.PeriodicOn x R a ∧ NivatTrial.Periodicity.PeriodicOn x R b
+'NivatTrial.ColleRegionalConclusion.regional_configuration_of_low_complexity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

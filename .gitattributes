@@ -1,0 +1,3 @@
+# Preserve the original bytes of the audited mathematical sources.
+NivatTrial/*.lean -text
+

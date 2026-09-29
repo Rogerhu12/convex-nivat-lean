@@ -1,0 +1,15 @@
+.lake/
+ci-logs/
+__pycache__/
+*.pyc
+*.olean
+*.ilean
+*.olean.server
+*.olean.private
+*.trace
+*.o
+*.obj
+*.exe
+.env
+.env.*
+tmp*/

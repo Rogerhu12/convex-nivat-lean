@@ -1,0 +1,66 @@
+name: Lean build and theorem audit
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    env:
+      LEAN_NUM_THREADS: 2
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Verify source provenance and checker tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p ci-logs
+          python3 -m unittest discover -s tests -v 2>&1 | tee ci-logs/checker-tests.log
+          python3 check.py 2>&1 | tee ci-logs/source-check.log
+      - name: Install pinned toolchain manager
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/0e36a07b9bbcc5381fa6250df109f9a4f94d7bac/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Fetch pinned mathematical dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          lean --version | tee ci-logs/toolchain.log
+          lake exe cache get 2>&1 | tee ci-logs/dependencies.log
+          test "$(git -C .lake/packages/mathlib rev-parse HEAD)" = db584cd6d46c92f209a44c0f1c829460d327499d
+          git diff --exit-code -- lake-manifest.json
+      - name: Build all proof modules and independent statement
+        shell: bash
+        run: |
+          set -euo pipefail
+          lake build 2>&1 | tee ci-logs/build.log
+      - name: Audit exact theorem and all project axioms
+        shell: bash
+        run: |
+          set -euo pipefail
+          lake env lean Audit.lean 2>&1 | tee ci-logs/axioms-and-statement.log
+          python3 check.py 2>&1 | tee ci-logs/final-source-check.log
+      - name: Preserve verification logs
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: lean-verification-${{ github.sha }}
+          path: |
+            ci-logs/
+            source-provenance.json
+            lean-toolchain
+            lake-manifest.json
+          retention-days: 30

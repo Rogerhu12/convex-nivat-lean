@@ -1,0 +1,2440 @@
+{
+  "success": true,
+  "started_utc": "2026-09-29T21:56:34.466086+00:00",
+  "lean": "4.33.0",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "roots": [
+    "NivatTrial.TheoremB"
+  ],
+  "scope": "import-closure",
+  "counts": {
+    "files": [
+      {
+        "file": "AffineBudget.lean",
+        "total_lines": 186,
+        "code_lines": 155
+      },
+      {
+        "file": "Algebra.lean",
+        "total_lines": 146,
+        "code_lines": 103
+      },
+      {
+        "file": "AmbiguityPropagation.lean",
+        "total_lines": 196,
+        "code_lines": 161
+      },
+      {
+        "file": "AnnihilatorDilation.lean",
+        "total_lines": 91,
+        "code_lines": 78
+      },
+      {
+        "file": "AvailableDirections.lean",
+        "total_lines": 107,
+        "code_lines": 94
+      },
+      {
+        "file": "Background.lean",
+        "total_lines": 76,
+        "code_lines": 56
+      },
+      {
+        "file": "BalancedPropagation.lean",
+        "total_lines": 317,
+        "code_lines": 275
+      },
+      {
+        "file": "BalancedTransforms.lean",
+        "total_lines": 146,
+        "code_lines": 125
+      },
+      {
+        "file": "BalancedWindows.lean",
+        "total_lines": 335,
+        "code_lines": 297
+      },
+      {
+        "file": "BinomialDirections.lean",
+        "total_lines": 176,
+        "code_lines": 141
+      },
+      {
+        "file": "BiRecursion.lean",
+        "total_lines": 117,
+        "code_lines": 91
+      },
+      {
+        "file": "CoefficientField.lean",
+        "total_lines": 85,
+        "code_lines": 57
+      },
+      {
+        "file": "ColleActualHalfStrip.lean",
+        "total_lines": 41,
+        "code_lines": 29
+      },
+      {
+        "file": "ColleActualSecondAmbiguity.lean",
+        "total_lines": 98,
+        "code_lines": 89
+      },
+      {
+        "file": "ColleAdjacentDirections.lean",
+        "total_lines": 102,
+        "code_lines": 90
+      },
+      {
+        "file": "ColleAgreementExhaustion.lean",
+        "total_lines": 55,
+        "code_lines": 47
+      },
+      {
+        "file": "ColleAmbiguity.lean",
+        "total_lines": 152,
+        "code_lines": 116
+      },
+      {
+        "file": "ColleAmbiguousBandBound.lean",
+        "total_lines": 128,
+        "code_lines": 115
+      },
+      {
+        "file": "ColleAmbiguousFullPatterns.lean",
+        "total_lines": 85,
+        "code_lines": 70
+      },
+      {
+        "file": "ColleAmbiguousRepeat.lean",
+        "total_lines": 71,
+        "code_lines": 57
+      },
+      {
+        "file": "ColleAmbiguousStrip.lean",
+        "total_lines": 134,
+        "code_lines": 119
+      },
+      {
+        "file": "ColleBalancedRows.lean",
+        "total_lines": 180,
+        "code_lines": 158
+      },
+      {
+        "file": "ColleBoundaryLimits.lean",
+        "total_lines": 98,
+        "code_lines": 87
+      },
+      {
+        "file": "ColleBoundaryPropagation.lean",
+        "total_lines": 222,
+        "code_lines": 204
+      },
+      {
+        "file": "ColleBoundaryRecenter.lean",
+        "total_lines": 88,
+        "code_lines": 78
+      },
+      {
+        "file": "ColleBoundaryStripGeometry.lean",
+        "total_lines": 91,
+        "code_lines": 76
+      },
+      {
+        "file": "ColleCaseOne.lean",
+        "total_lines": 118,
+        "code_lines": 104
+      },
+      {
+        "file": "ColleCaseOneConclusion.lean",
+        "total_lines": 64,
+        "code_lines": 57
+      },
+      {
+        "file": "ColleCaseOneFixedRegion.lean",
+        "total_lines": 95,
+        "code_lines": 86
+      },
+      {
+        "file": "ColleCaseOneNormalizedReference.lean",
+        "total_lines": 78,
+        "code_lines": 65
+      },
+      {
+        "file": "ColleCaseOneProperRegion.lean",
+        "total_lines": 74,
+        "code_lines": 60
+      },
+      {
+        "file": "ColleCaseOneReflectionTransport.lean",
+        "total_lines": 401,
+        "code_lines": 350
+      },
+      {
+        "file": "ColleCaseOneSeedRegion.lean",
+        "total_lines": 108,
+        "code_lines": 98
+      },
+      {
+        "file": "ColleCaseOneWedgeSeed.lean",
+        "total_lines": 163,
+        "code_lines": 152
+      },
+      {
+        "file": "ColleCaseTwoAperiodic.lean",
+        "total_lines": 82,
+        "code_lines": 74
+      },
+      {
+        "file": "ColleCaseTwoConclusion.lean",
+        "total_lines": 81,
+        "code_lines": 73
+      },
+      {
+        "file": "ColleCaseTwoWindows.lean",
+        "total_lines": 90,
+        "code_lines": 82
+      },
+      {
+        "file": "ColleCoordinateTransport.lean",
+        "total_lines": 117,
+        "code_lines": 101
+      },
+      {
+        "file": "ColleDecompositionHull.lean",
+        "total_lines": 56,
+        "code_lines": 45
+      },
+      {
+        "file": "ColleDecompositionTransforms.lean",
+        "total_lines": 67,
+        "code_lines": 54
+      },
+      {
+        "file": "ColleDefectiveGrowingEnvelopes.lean",
+        "total_lines": 151,
+        "code_lines": 143
+      },
+      {
+        "file": "ColleDirectedAgreement.lean",
+        "total_lines": 127,
+        "code_lines": 114
+      },
+      {
+        "file": "ColleDirectionalPropagation.lean",
+        "total_lines": 184,
+        "code_lines": 160
+      },
+      {
+        "file": "ColleEnvelopeExpansion.lean",
+        "total_lines": 76,
+        "code_lines": 61
+      },
+      {
+        "file": "ColleEnvelopeFiberCoding.lean",
+        "total_lines": 81,
+        "code_lines": 69
+      },
+      {
+        "file": "ColleEnvelopeGeometry.lean",
+        "total_lines": 177,
+        "code_lines": 147
+      },
+      {
+        "file": "ColleEnvelopeLimits.lean",
+        "total_lines": 102,
+        "code_lines": 87
+      },
+      {
+        "file": "ColleEnvelopeRays.lean",
+        "total_lines": 147,
+        "code_lines": 131
+      },
+      {
+        "file": "ColleEnvelopeRecession.lean",
+        "total_lines": 130,
+        "code_lines": 114
+      },
+      {
+        "file": "ColleEnvelopeTranslation.lean",
+        "total_lines": 93,
+        "code_lines": 77
+      },
+      {
+        "file": "ColleErosionSupport.lean",
+        "total_lines": 69,
+        "code_lines": 59
+      },
+      {
+        "file": "ColleFiniteDefectLimits.lean",
+        "total_lines": 45,
+        "code_lines": 38
+      },
+      {
+        "file": "ColleFiniteEnvelope.lean",
+        "total_lines": 108,
+        "code_lines": 89
+      },
+      {
+        "file": "ColleFiniteMaximalTranslation.lean",
+        "total_lines": 87,
+        "code_lines": 78
+      },
+      {
+        "file": "ColleFirstBoundaryMinimum.lean",
+        "total_lines": 103,
+        "code_lines": 89
+      },
+      {
+        "file": "ColleFirstBoundaryTranslation.lean",
+        "total_lines": 65,
+        "code_lines": 57
+      },
+      {
+        "file": "ColleFixedAgreementRegion.lean",
+        "total_lines": 78,
+        "code_lines": 69
+      },
+      {
+        "file": "ColleGeneralBoundaryReference.lean",
+        "total_lines": 86,
+        "code_lines": 74
+      },
+      {
+        "file": "ColleGenerating.lean",
+        "total_lines": 153,
+        "code_lines": 128
+      },
+      {
+        "file": "ColleGeneratingTransforms.lean",
+        "total_lines": 185,
+        "code_lines": 161
+      },
+      {
+        "file": "ColleGrowingEnvelopes.lean",
+        "total_lines": 95,
+        "code_lines": 85
+      },
+      {
+        "file": "ColleHalfPlaneAmbiguity.lean",
+        "total_lines": 118,
+        "code_lines": 105
+      },
+      {
+        "file": "ColleHalfPlanePeriod.lean",
+        "total_lines": 151,
+        "code_lines": 132
+      },
+      {
+        "file": "ColleHalfStrip.lean",
+        "total_lines": 87,
+        "code_lines": 71
+      },
+      {
+        "file": "ColleHalfStripBase.lean",
+        "total_lines": 93,
+        "code_lines": 83
+      },
+      {
+        "file": "ColleHalfStripEnvelope.lean",
+        "total_lines": 235,
+        "code_lines": 202
+      },
+      {
+        "file": "ColleHighestBoundaryRow.lean",
+        "total_lines": 99,
+        "code_lines": 86
+      },
+      {
+        "file": "ColleHorizontalSplice.lean",
+        "total_lines": 68,
+        "code_lines": 55
+      },
+      {
+        "file": "ColleHullCoding.lean",
+        "total_lines": 284,
+        "code_lines": 253
+      },
+      {
+        "file": "ColleIntegerOpposite.lean",
+        "total_lines": 43,
+        "code_lines": 35
+      },
+      {
+        "file": "ColleInterfaceAmbiguity.lean",
+        "total_lines": 122,
+        "code_lines": 102
+      },
+      {
+        "file": "ColleLeftwardCoordinates.lean",
+        "total_lines": 62,
+        "code_lines": 51
+      },
+      {
+        "file": "ColleLimitRigidity.lean",
+        "total_lines": 60,
+        "code_lines": 41
+      },
+      {
+        "file": "ColleLocalBoundaryPropagation.lean",
+        "total_lines": 169,
+        "code_lines": 157
+      },
+      {
+        "file": "ColleLocalSubshift.lean",
+        "total_lines": 101,
+        "code_lines": 82
+      },
+      {
+        "file": "ColleLongFaces.lean",
+        "total_lines": 107,
+        "code_lines": 91
+      },
+      {
+        "file": "ColleMaximalAgreementLimit.lean",
+        "total_lines": 178,
+        "code_lines": 163
+      },
+      {
+        "file": "ColleMaximalEnvelope.lean",
+        "total_lines": 167,
+        "code_lines": 140
+      },
+      {
+        "file": "ColleMaximalSeedDefect.lean",
+        "total_lines": 114,
+        "code_lines": 99
+      },
+      {
+        "file": "ColleMaximalTranslation.lean",
+        "total_lines": 70,
+        "code_lines": 59
+      },
+      {
+        "file": "ColleMinimality.lean",
+        "total_lines": 181,
+        "code_lines": 157
+      },
+      {
+        "file": "ColleMorseBound.lean",
+        "total_lines": 79,
+        "code_lines": 67
+      },
+      {
+        "file": "ColleNonuniqueStrip.lean",
+        "total_lines": 162,
+        "code_lines": 146
+      },
+      {
+        "file": "ColleOneSidedAmbiguity.lean",
+        "total_lines": 171,
+        "code_lines": 153
+      },
+      {
+        "file": "ColleOneSidedBoundary.lean",
+        "total_lines": 257,
+        "code_lines": 240
+      },
+      {
+        "file": "ColleOppositeDirections.lean",
+        "total_lines": 162,
+        "code_lines": 142
+      },
+      {
+        "file": "ColleOrbitCofactor.lean",
+        "total_lines": 122,
+        "code_lines": 94
+      },
+      {
+        "file": "ColleParallelogramGeometry.lean",
+        "total_lines": 184,
+        "code_lines": 161
+      },
+      {
+        "file": "ColleParallelogramRows.lean",
+        "total_lines": 80,
+        "code_lines": 66
+      },
+      {
+        "file": "ColleParallelogramSeeds.lean",
+        "total_lines": 129,
+        "code_lines": 112
+      },
+      {
+        "file": "ColleParallelogramWindow.lean",
+        "total_lines": 111,
+        "code_lines": 95
+      },
+      {
+        "file": "CollePeriodDirections.lean",
+        "total_lines": 101,
+        "code_lines": 74
+      },
+      {
+        "file": "CollePeriodicPhases.lean",
+        "total_lines": 70,
+        "code_lines": 60
+      },
+      {
+        "file": "CollePeriodicReferencePair.lean",
+        "total_lines": 168,
+        "code_lines": 155
+      },
+      {
+        "file": "CollePeriodicRowPropagation.lean",
+        "total_lines": 64,
+        "code_lines": 53
+      },
+      {
+        "file": "CollePositiveCoordinates.lean",
+        "total_lines": 42,
+        "code_lines": 37
+      },
+      {
+        "file": "ColleProperPeriodicReference.lean",
+        "total_lines": 199,
+        "code_lines": 176
+      },
+      {
+        "file": "ColleProperReferences.lean",
+        "total_lines": 77,
+        "code_lines": 65
+      },
+      {
+        "file": "ColleRationalDirections.lean",
+        "total_lines": 241,
+        "code_lines": 217
+      },
+      {
+        "file": "ColleReferenceLimits.lean",
+        "total_lines": 90,
+        "code_lines": 79
+      },
+      {
+        "file": "ColleReferencePhaseRepeat.lean",
+        "total_lines": 135,
+        "code_lines": 114
+      },
+      {
+        "file": "ColleReferencePropagation.lean",
+        "total_lines": 58,
+        "code_lines": 49
+      },
+      {
+        "file": "ColleReferenceRegion.lean",
+        "total_lines": 67,
+        "code_lines": 56
+      },
+      {
+        "file": "ColleReferenceRigidity.lean",
+        "total_lines": 100,
+        "code_lines": 83
+      },
+      {
+        "file": "ColleReferenceSelection.lean",
+        "total_lines": 76,
+        "code_lines": 67
+      },
+      {
+        "file": "ColleRegionalBranches.lean",
+        "total_lines": 77,
+        "code_lines": 66
+      },
+      {
+        "file": "ColleRegionalConclusion.lean",
+        "total_lines": 75,
+        "code_lines": 62
+      },
+      {
+        "file": "ColleRegionalEntry.lean",
+        "total_lines": 186,
+        "code_lines": 160
+      },
+      {
+        "file": "ColleRegionCompactness.lean",
+        "total_lines": 93,
+        "code_lines": 74
+      },
+      {
+        "file": "ColleRegionDichotomy.lean",
+        "total_lines": 56,
+        "code_lines": 47
+      },
+      {
+        "file": "ColleRegions.lean",
+        "total_lines": 199,
+        "code_lines": 172
+      },
+      {
+        "file": "ColleReverseBalancedRows.lean",
+        "total_lines": 127,
+        "code_lines": 112
+      },
+      {
+        "file": "ColleSecondBoundaryCoordinates.lean",
+        "total_lines": 141,
+        "code_lines": 122
+      },
+      {
+        "file": "ColleSecondBoundaryDefects.lean",
+        "total_lines": 152,
+        "code_lines": 139
+      },
+      {
+        "file": "ColleSecondBoundaryPeriod.lean",
+        "total_lines": 58,
+        "code_lines": 48
+      },
+      {
+        "file": "ColleSecondBoundaryReference.lean",
+        "total_lines": 83,
+        "code_lines": 74
+      },
+      {
+        "file": "ColleSecondBoundaryStrip.lean",
+        "total_lines": 127,
+        "code_lines": 117
+      },
+      {
+        "file": "ColleSeedBlockPropagation.lean",
+        "total_lines": 98,
+        "code_lines": 87
+      },
+      {
+        "file": "ColleSemiAmbiguity.lean",
+        "total_lines": 82,
+        "code_lines": 65
+      },
+      {
+        "file": "ColleSemiAmbiguityTransport.lean",
+        "total_lines": 110,
+        "code_lines": 99
+      },
+      {
+        "file": "ColleSlantedBlock.lean",
+        "total_lines": 202,
+        "code_lines": 181
+      },
+      {
+        "file": "ColleStepExpansionGeometry.lean",
+        "total_lines": 135,
+        "code_lines": 117
+      },
+      {
+        "file": "ColleStripDichotomy.lean",
+        "total_lines": 129,
+        "code_lines": 115
+      },
+      {
+        "file": "ColleStripInduction.lean",
+        "total_lines": 92,
+        "code_lines": 79
+      },
+      {
+        "file": "ColleStripPeriod.lean",
+        "total_lines": 55,
+        "code_lines": 43
+      },
+      {
+        "file": "ColleStripRigidity.lean",
+        "total_lines": 208,
+        "code_lines": 185
+      },
+      {
+        "file": "ColleTailWords.lean",
+        "total_lines": 143,
+        "code_lines": 118
+      },
+      {
+        "file": "ColleTopReferencePropagation.lean",
+        "total_lines": 198,
+        "code_lines": 176
+      },
+      {
+        "file": "ColleVertexGeometry.lean",
+        "total_lines": 199,
+        "code_lines": 182
+      },
+      {
+        "file": "ColleWedgePeriod.lean",
+        "total_lines": 150,
+        "code_lines": 135
+      },
+      {
+        "file": "ColleWedgeRecurrence.lean",
+        "total_lines": 107,
+        "code_lines": 94
+      },
+      {
+        "file": "ColleWedgeReference.lean",
+        "total_lines": 106,
+        "code_lines": 96
+      },
+      {
+        "file": "ColleWindowWidth.lean",
+        "total_lines": 100,
+        "code_lines": 87
+      },
+      {
+        "file": "ColleWitnessHalfPlane.lean",
+        "total_lines": 149,
+        "code_lines": 135
+      },
+      {
+        "file": "ColleZonotopeEnvelope.lean",
+        "total_lines": 560,
+        "code_lines": 514
+      },
+      {
+        "file": "ColleZonotopePlacement.lean",
+        "total_lines": 237,
+        "code_lines": 210
+      },
+      {
+        "file": "Components.lean",
+        "total_lines": 196,
+        "code_lines": 162
+      },
+      {
+        "file": "Confinement.lean",
+        "total_lines": 180,
+        "code_lines": 150
+      },
+      {
+        "file": "ConvexSupport.lean",
+        "total_lines": 174,
+        "code_lines": 150
+      },
+      {
+        "file": "Dichotomy.lean",
+        "total_lines": 93,
+        "code_lines": 72
+      },
+      {
+        "file": "Differences.lean",
+        "total_lines": 97,
+        "code_lines": 70
+      },
+      {
+        "file": "DirectionalElimination.lean",
+        "total_lines": 91,
+        "code_lines": 81
+      },
+      {
+        "file": "Divisibility.lean",
+        "total_lines": 1040,
+        "code_lines": 848
+      },
+      {
+        "file": "Dynamics.lean",
+        "total_lines": 911,
+        "code_lines": 724
+      },
+      {
+        "file": "ExternalInputs.lean",
+        "total_lines": 94,
+        "code_lines": 70
+      },
+      {
+        "file": "FiniteDetermination.lean",
+        "total_lines": 96,
+        "code_lines": 81
+      },
+      {
+        "file": "FiniteIncrementFibers.lean",
+        "total_lines": 97,
+        "code_lines": 83
+      },
+      {
+        "file": "FirstCase.lean",
+        "total_lines": 74,
+        "code_lines": 52
+      },
+      {
+        "file": "FirstHalfPlane.lean",
+        "total_lines": 115,
+        "code_lines": 100
+      },
+      {
+        "file": "GeneratingWindows.lean",
+        "total_lines": 119,
+        "code_lines": 97
+      },
+      {
+        "file": "Geometry.lean",
+        "total_lines": 102,
+        "code_lines": 77
+      },
+      {
+        "file": "GlobalSpectrum.lean",
+        "total_lines": 306,
+        "code_lines": 252
+      },
+      {
+        "file": "HalfPlane.lean",
+        "total_lines": 153,
+        "code_lines": 127
+      },
+      {
+        "file": "HalfPlaneLimit.lean",
+        "total_lines": 321,
+        "code_lines": 285
+      },
+      {
+        "file": "HorizontalCoordinates.lean",
+        "total_lines": 53,
+        "code_lines": 44
+      },
+      {
+        "file": "HullIntegerDecomposition.lean",
+        "total_lines": 60,
+        "code_lines": 40
+      },
+      {
+        "file": "IncrementSupport.lean",
+        "total_lines": 98,
+        "code_lines": 80
+      },
+      {
+        "file": "IntegerAnnihilator.lean",
+        "total_lines": 118,
+        "code_lines": 102
+      },
+      {
+        "file": "IntegerDecomposition.lean",
+        "total_lines": 126,
+        "code_lines": 105
+      },
+      {
+        "file": "IntegerDecompositionOrder.lean",
+        "total_lines": 47,
+        "code_lines": 39
+      },
+      {
+        "file": "IntegerIntegration.lean",
+        "total_lines": 136,
+        "code_lines": 105
+      },
+      {
+        "file": "IntegerPowerReduction.lean",
+        "total_lines": 128,
+        "code_lines": 96
+      },
+      {
+        "file": "Isolation.lean",
+        "total_lines": 177,
+        "code_lines": 147
+      },
+      {
+        "file": "JointFiberLimits.lean",
+        "total_lines": 60,
+        "code_lines": 52
+      },
+      {
+        "file": "KariMoutot.lean",
+        "total_lines": 220,
+        "code_lines": 184
+      },
+      {
+        "file": "KariSzabados.lean",
+        "total_lines": 97,
+        "code_lines": 76
+      },
+      {
+        "file": "LatticeCoordinates.lean",
+        "total_lines": 143,
+        "code_lines": 119
+      },
+      {
+        "file": "LatticePolygon.lean",
+        "total_lines": 122,
+        "code_lines": 88
+      },
+      {
+        "file": "LaurentAction.lean",
+        "total_lines": 111,
+        "code_lines": 84
+      },
+      {
+        "file": "LaurentDilation.lean",
+        "total_lines": 98,
+        "code_lines": 76
+      },
+      {
+        "file": "LaurentVandermonde.lean",
+        "total_lines": 182,
+        "code_lines": 151
+      },
+      {
+        "file": "MaximalIncrementFibers.lean",
+        "total_lines": 46,
+        "code_lines": 38
+      },
+      {
+        "file": "MinimalHull.lean",
+        "total_lines": 109,
+        "code_lines": 92
+      },
+      {
+        "file": "ModularReduction.lean",
+        "total_lines": 62,
+        "code_lines": 45
+      },
+      {
+        "file": "MorseHedlund.lean",
+        "total_lines": 454,
+        "code_lines": 361
+      },
+      {
+        "file": "Nonexpansive.lean",
+        "total_lines": 151,
+        "code_lines": 113
+      },
+      {
+        "file": "NonexpansiveExistence.lean",
+        "total_lines": 171,
+        "code_lines": 147
+      },
+      {
+        "file": "NonexpansiveGeometry.lean",
+        "total_lines": 121,
+        "code_lines": 94
+      },
+      {
+        "file": "OneSided.lean",
+        "total_lines": 244,
+        "code_lines": 195
+      },
+      {
+        "file": "OneSidedRecurrence.lean",
+        "total_lines": 374,
+        "code_lines": 323
+      },
+      {
+        "file": "ParallelCollapse.lean",
+        "total_lines": 128,
+        "code_lines": 106
+      },
+      {
+        "file": "Patterns.lean",
+        "total_lines": 95,
+        "code_lines": 74
+      },
+      {
+        "file": "PeriodicBandCoding.lean",
+        "total_lines": 126,
+        "code_lines": 110
+      },
+      {
+        "file": "PeriodicDifference.lean",
+        "total_lines": 131,
+        "code_lines": 110
+      },
+      {
+        "file": "PeriodicInterface.lean",
+        "total_lines": 141,
+        "code_lines": 123
+      },
+      {
+        "file": "Periodicity.lean",
+        "total_lines": 847,
+        "code_lines": 687
+      },
+      {
+        "file": "PeriodicNonexpansive.lean",
+        "total_lines": 98,
+        "code_lines": 84
+      },
+      {
+        "file": "PeriodicSubshift.lean",
+        "total_lines": 216,
+        "code_lines": 188
+      },
+      {
+        "file": "Quadratic.lean",
+        "total_lines": 179,
+        "code_lines": 140
+      },
+      {
+        "file": "QuotientFactors.lean",
+        "total_lines": 236,
+        "code_lines": 189
+      },
+      {
+        "file": "QuotientIdeals.lean",
+        "total_lines": 118,
+        "code_lines": 91
+      },
+      {
+        "file": "QuotientLinear.lean",
+        "total_lines": 196,
+        "code_lines": 168
+      },
+      {
+        "file": "QuotientRelations.lean",
+        "total_lines": 51,
+        "code_lines": 36
+      },
+      {
+        "file": "QuotientSpanning.lean",
+        "total_lines": 53,
+        "code_lines": 39
+      },
+      {
+        "file": "QuotientSupport.lean",
+        "total_lines": 117,
+        "code_lines": 98
+      },
+      {
+        "file": "RealDirectionGeometry.lean",
+        "total_lines": 50,
+        "code_lines": 40
+      },
+      {
+        "file": "RealHalfPlaneRecurrence.lean",
+        "total_lines": 101,
+        "code_lines": 85
+      },
+      {
+        "file": "ReducedDecomposition.lean",
+        "total_lines": 193,
+        "code_lines": 159
+      },
+      {
+        "file": "RegionalReduction.lean",
+        "total_lines": 58,
+        "code_lines": 48
+      },
+      {
+        "file": "RegionGeometry.lean",
+        "total_lines": 169,
+        "code_lines": 147
+      },
+      {
+        "file": "RowDetermination.lean",
+        "total_lines": 238,
+        "code_lines": 201
+      },
+      {
+        "file": "SecondHalfPlane.lean",
+        "total_lines": 196,
+        "code_lines": 178
+      },
+      {
+        "file": "SectorBackground.lean",
+        "total_lines": 405,
+        "code_lines": 348
+      },
+      {
+        "file": "SeparatedFiberLimits.lean",
+        "total_lines": 85,
+        "code_lines": 70
+      },
+      {
+        "file": "Spectral.lean",
+        "total_lines": 650,
+        "code_lines": 523
+      },
+      {
+        "file": "SpectralGeometry.lean",
+        "total_lines": 47,
+        "code_lines": 33
+      },
+      {
+        "file": "Star.lean",
+        "total_lines": 130,
+        "code_lines": 96
+      },
+      {
+        "file": "StarNormalization.lean",
+        "total_lines": 170,
+        "code_lines": 135
+      },
+      {
+        "file": "StarRecurrence.lean",
+        "total_lines": 61,
+        "code_lines": 43
+      },
+      {
+        "file": "StarWindow.lean",
+        "total_lines": 68,
+        "code_lines": 52
+      },
+      {
+        "file": "Strips.lean",
+        "total_lines": 225,
+        "code_lines": 175
+      },
+      {
+        "file": "SupportGeometry.lean",
+        "total_lines": 97,
+        "code_lines": 83
+      },
+      {
+        "file": "TheoremA.lean",
+        "total_lines": 69,
+        "code_lines": 52
+      },
+      {
+        "file": "TheoremB.lean",
+        "total_lines": 49,
+        "code_lines": 37
+      },
+      {
+        "file": "TwoComponent.lean",
+        "total_lines": 253,
+        "code_lines": 221
+      },
+      {
+        "file": "TwoComponentLimits.lean",
+        "total_lines": 156,
+        "code_lines": 135
+      },
+      {
+        "file": "Witness.lean",
+        "total_lines": 142,
+        "code_lines": 114
+      },
+      {
+        "file": "WitnessTransform.lean",
+        "total_lines": 170,
+        "code_lines": 135
+      },
+      {
+        "file": "Zonotope.lean",
+        "total_lines": 279,
+        "code_lines": 226
+      }
+    ],
+    "code_lines": 27091,
+    "total_lines": 32107
+  },
+  "sources_sha256": {
+    "NivatTrial.AffineBudget": "821f60171a17887c92dac0fa4e019a9f1fae73fd7e516e288e5db267b32396f1",
+    "NivatTrial.Algebra": "825f8028bab5b6fd1a2414ec78d83f725155b6dd0f07278a9d60c9511bc72241",
+    "NivatTrial.AmbiguityPropagation": "09958bd6055742ea1dbb9e59d05b04d9584d3ddf82b3b32463ea4c5ddfebe393",
+    "NivatTrial.AnnihilatorDilation": "411444dee8bb07ab398dfac492a08b6a9530f0376bb417199b2a247314806a28",
+    "NivatTrial.AvailableDirections": "c68c4de46794750951d6c4f26c3feb06e2146a72726765fdca679a0f24db48d4",
+    "NivatTrial.Background": "cefe518d5651bc5bd134020d721984411f4bc6b9c03d4c1643a764893c70ae4c",
+    "NivatTrial.BalancedPropagation": "02911dc8b78b9138a90abd84c2d7ede891f51c5f5f9acc575da4bcb587f20f10",
+    "NivatTrial.BalancedTransforms": "b28fff000fd4741908503ce89b5e287d9aaf700fa1a19bf41ecad020c87d3faf",
+    "NivatTrial.BalancedWindows": "7f335b263e3e401d324fd4bd21f3a82fcbaa603f26c976ad794e41abd1f9f984",
+    "NivatTrial.BiRecursion": "8a5f1ef61056c2bc8b1e106775920be53e8b33957ad5f56ef3af53e4ee7aaec1",
+    "NivatTrial.BinomialDirections": "c6f1abeba2b5f2059fd8e458cade19cd4fefae4a78c9d632d649422ec53d6c37",
+    "NivatTrial.CoefficientField": "f768f8f55b768a8fd16b28429a40c0ba2899a9b1e9aadd0d5c2fe6900b851b9d",
+    "NivatTrial.ColleActualHalfStrip": "92fda69bf7e976c69c06b19fd2095d20aeb131db03e51b8bbff8bcfd76c4a7e7",
+    "NivatTrial.ColleActualSecondAmbiguity": "49bc2b66e9b79a98f399c103e91200d5953d22496c4730862d598f463e310af6",
+    "NivatTrial.ColleAdjacentDirections": "748048e1dac7239b0cc3bc3529756c5c66573090a95d64dd6a6a2b2960ccfe6c",
+    "NivatTrial.ColleAgreementExhaustion": "2c3b73125600d92a7f8998f0559c5e75d86b9da0eef440a37504aa3f4d937d41",
+    "NivatTrial.ColleAmbiguity": "0d432add342d4093460405608ffdb2863fe05991ea4df0a73b2c4a80e8ee9704",
+    "NivatTrial.ColleAmbiguousBandBound": "682737eda7c51c18d5abbb31a56f20f1688dc0e5601b71eae7cad2482f4b650e",
+    "NivatTrial.ColleAmbiguousFullPatterns": "b30be777e871a9ad56c85aa1b8f9cb0919ae0680c2c3c097b0e1f22a88c90b34",
+    "NivatTrial.ColleAmbiguousRepeat": "15f9b31535ff8af96b3c1984e2de52198520a21623815556d38da0451dc67891",
+    "NivatTrial.ColleAmbiguousStrip": "fa3f1b0df42d4a050faa75898e3f5b5dc96036f447c052e8153feab6e4bb88d7",
+    "NivatTrial.ColleBalancedRows": "536a776855aad5592f1f3a392ddf800c86a98ed9a61d309fa0697d91dd05a723",
+    "NivatTrial.ColleBoundaryLimits": "055f008146bdbdab87f6f26fbc42459a6a7895aebcb0eb4049b33e24a9f3528f",
+    "NivatTrial.ColleBoundaryPropagation": "b0b52f74eeac7a82dd819547cc5fc6987749f56daf30f0e2464b054b1af5dc4c",
+    "NivatTrial.ColleBoundaryRecenter": "2c8c78394bea3caa3b26299ca06fd6dee726fa94d40cf81aecc634d2fa02ec1a",
+    "NivatTrial.ColleBoundaryStripGeometry": "32ec0f7520b649e824a69e6c8b821f4005f013f0c38a4e09bdd303d0c74cb597",
+    "NivatTrial.ColleCaseOne": "48d80eb7d4854af0fb6015be4577de7344192de2c00310067090b2f267f8663e",
+    "NivatTrial.ColleCaseOneConclusion": "a346ada72b63f75dc02d48abfcdcc2d6b91638dc35e4c47b341a36aa0aee9f45",
+    "NivatTrial.ColleCaseOneFixedRegion": "5cd1d8f3c7a91fcf0e5458ab0cd176d52a44690c022853c1982f407908cfcef6",
+    "NivatTrial.ColleCaseOneNormalizedReference": "aff063d5df2358342dd2f30760020848dd7a322bc4fc4d9a793c3c7faa420434",
+    "NivatTrial.ColleCaseOneProperRegion": "29a8a6a19cff9028d73faf1821d9d6a020f792ced2ff253ac017c44da35a04f1",
+    "NivatTrial.ColleCaseOneReflectionTransport": "b4fb79afe5a98f844a3dd0e5b17aab42b336ed9d40ef0f7517ac718f33658f69",
+    "NivatTrial.ColleCaseOneSeedRegion": "1c6896a7ba3efe1a9d08c4e44fab2c31e4c948739bae81034fac38d8aff112c7",
+    "NivatTrial.ColleCaseOneWedgeSeed": "0c5185128cdca182406c5ac213c2fab1f2f50f49209b62584a48e3b297b3aec7",
+    "NivatTrial.ColleCaseTwoAperiodic": "1a461499bc1c73d9dd753ae6720f5b4646a8596c080e20326b44f2ae71800bd8",
+    "NivatTrial.ColleCaseTwoConclusion": "78e8398c253a22866ead67b36af34a24ca6cf20817792e9b78895e1c9f4f1915",
+    "NivatTrial.ColleCaseTwoWindows": "60610863685df2177a86e3d249654654521beb007086a5fd53c543dd0948c2b7",
+    "NivatTrial.ColleCoordinateTransport": "7a06abc2777ea2bea59c48d7016a9963e28aafcf66a0bbb967f9330b7d482fdf",
+    "NivatTrial.ColleDecompositionHull": "366eef454f1f251fd46da48032b75b2074ac3fbe4bdb453dce9d4c75712d6b70",
+    "NivatTrial.ColleDecompositionTransforms": "c3f4cf9658a3d1be19f53c0c457f38c0471dc4b114e7fe59481186b40029949c",
+    "NivatTrial.ColleDefectiveGrowingEnvelopes": "d7bd38ed3f863c9bd415fb82de27af748fcb57d194ae14b407930eac15e1375d",
+    "NivatTrial.ColleDirectedAgreement": "fd8eb61b893982cec6588e76c66e31915177409d00a003d47d5d4f8e1f1de3cb",
+    "NivatTrial.ColleDirectionalPropagation": "314b091f9a8064dd3a8e6860a890a567b6a848e18b1448b3c5781cb7d74b4124",
+    "NivatTrial.ColleEnvelopeExpansion": "56afa5b16d8e129cee6354854fa7491f6160ef90a6348dd2f3c485535476a0b0",
+    "NivatTrial.ColleEnvelopeFiberCoding": "daa4d1bc2e9409758fe265d2334c0d35b324dbf63428cc51b465c4951c9c5488",
+    "NivatTrial.ColleEnvelopeGeometry": "428b6bd6810d37dde222efe970cfd27dd20690fb2501aaf0e02313ee0278361e",
+    "NivatTrial.ColleEnvelopeLimits": "a108e33024c9d1ced14ff4aa5e1bb3feb185b3187a0b4dbe95c3362dd54af50f",
+    "NivatTrial.ColleEnvelopeRays": "a01a564e48e780919943beeb4ba8c62b40786c3afe055bd62ff9b10a6246b98b",
+    "NivatTrial.ColleEnvelopeRecession": "98d4a5a4d2db827d89904ea5ccd8dfa7c6f16c7b682250f883beecfd159cd00c",
+    "NivatTrial.ColleEnvelopeTranslation": "ec43d377f5a27fcc539f4ce6c410cb8779028633a27001a72b78ae3af8258933",
+    "NivatTrial.ColleErosionSupport": "bc1793f40f12cbc14350f901c7d1db89d90ec204e66ea53bc1d513c8f494e796",
+    "NivatTrial.ColleFiniteDefectLimits": "6229a321ca6f7b83e6cec51e233b606b1af26d1e6897ecd30ae9bce6c4a921ca",
+    "NivatTrial.ColleFiniteEnvelope": "d9ce6f48f6dcc57f63e81872907d42e07a09fc36650820c6812c09b8b28c385e",
+    "NivatTrial.ColleFiniteMaximalTranslation": "8fc6e79bc2d4128034f2c5da08c2458dcc0757047c4e9621954ae94d6f379fd1",
+    "NivatTrial.ColleFirstBoundaryMinimum": "0b6e32dc9a7877da82ec2931145abfdf52899662adaee41e032048c8e8d3e330",
+    "NivatTrial.ColleFirstBoundaryTranslation": "d14a91079c76a43c94a249a4aec6b65304e0e6073f092709844b9b982eea7459",
+    "NivatTrial.ColleFixedAgreementRegion": "71f536e6722b4360c5ceed470d65a2f65e3bbf3246a300d7583225728d5320b2",
+    "NivatTrial.ColleGeneralBoundaryReference": "4c06bc4cb8a5babecf69c7aeadfae0d7b5bdc7ba4d6b56d33e2a5e3b918f4129",
+    "NivatTrial.ColleGenerating": "34caaf245d9e68434b0423e23024ec1bec54ba21e61888da196d8c3d3c10a393",
+    "NivatTrial.ColleGeneratingTransforms": "ce76e292e9d52b693168a691f996e5f60b5e3c28865d9f4bf46f9577b90b5cba",
+    "NivatTrial.ColleGrowingEnvelopes": "23166f6d4ffabded3e653b5f379abb628776c9d2c889dffd9051d79b61dc8d65",
+    "NivatTrial.ColleHalfPlaneAmbiguity": "d18b22b917aff9a0e9acd48bf052ef0fe4773f25f42b12b4730521f584393406",
+    "NivatTrial.ColleHalfPlanePeriod": "0d1ddc306d3523c97956a22f7fbc791a111c78c6790ed133972cced4d28276f5",
+    "NivatTrial.ColleHalfStrip": "8a32ff6bb48ab7fb3de7254f51fa65b354c1855456be5bb2427b6cb183f304ed",
+    "NivatTrial.ColleHalfStripBase": "bc1728f43e824054255e97f55c09935bbd8882373decffb34298cd1dff8646ff",
+    "NivatTrial.ColleHalfStripEnvelope": "6c7e69ba009dac4c8efb78b347d40f2cc26f59022221599bc551ce976e911cae",
+    "NivatTrial.ColleHighestBoundaryRow": "e82398cd7a95c3b4fd120d1d8f4262cf9afc6f6591ba4034ae8b3134c56bb14c",
+    "NivatTrial.ColleHorizontalSplice": "53846ab0e2d9107a5adb48f48152d6c485e0d05e73f4436a6909348163b8a002",
+    "NivatTrial.ColleHullCoding": "1bf21ecc3abf662661338376b159373d500f9548f56cb56da4adfd4c1d1ce59a",
+    "NivatTrial.ColleIntegerOpposite": "d68c16438b84facd0aaad276346e39d7609073af129f2575ea62e7f23009ccf3",
+    "NivatTrial.ColleInterfaceAmbiguity": "4812911a118f7ae058182f5771dd28ab3bc6ed204862b179244dd4038a6ac550",
+    "NivatTrial.ColleLeftwardCoordinates": "ed25f6dcc96f4600de3576070d8ca02a1f56f4ee4d4b8162e49bf36397148691",
+    "NivatTrial.ColleLimitRigidity": "683aad89f5d4e7d4a108bce2849f28a368b5f7299640a13ceafd133e058c342c",
+    "NivatTrial.ColleLocalBoundaryPropagation": "6334afbb594324c0b6d4b0108210c1fa24ee9d98f0ec9cf064d6301893e91a20",
+    "NivatTrial.ColleLocalSubshift": "2d5dc017db0dd5fe8ad806d025ad4caef9a01bedf8998d7e1a531e8d6f96957e",
+    "NivatTrial.ColleLongFaces": "e4f984f612e458424f9b98ae32dafb246dba154baaec7b85008cd954e86dc7e8",
+    "NivatTrial.ColleMaximalAgreementLimit": "c8913e19638fb4f012b0c83dd55c19e80dc0917f5b9e35c058eb87116272cce4",
+    "NivatTrial.ColleMaximalEnvelope": "3a04fce2a18077ea4283f0e30adaede3b681cd79fbabdac1e0721e9a33ce33f8",
+    "NivatTrial.ColleMaximalSeedDefect": "510cc49fc59bbdd53b28461524e35a7c60dddd80d26a6d6a58993d655e87d0c9",
+    "NivatTrial.ColleMaximalTranslation": "ac8407f47b8e26ae48b8c18df02ec9c085548f8b7d44fdf70fd1932c58b98f3a",
+    "NivatTrial.ColleMinimality": "c412cd7119ebc82045500354c9a1452e9788de60acd8362830222dd1b7b3c964",
+    "NivatTrial.ColleMorseBound": "5320deb6ee93aec9227eaaac72f8f3ee52776efc1d226c17757fd6d619287ee8",
+    "NivatTrial.ColleNonuniqueStrip": "20c5c2000e8286945642bbfbd7a4c8f70677b7adcb59ede78467961d5e5f755f",
+    "NivatTrial.ColleOneSidedAmbiguity": "4599b20fccff0cfa54375d2b57b3205169d0081c33e914ba4b3c2ab90c37ef8b",
+    "NivatTrial.ColleOneSidedBoundary": "18308655bb37bc77e368b93645638035b2ac5320c32a999805b2c9cb1e8e5304",
+    "NivatTrial.ColleOppositeDirections": "678b79da097e1d1346fe0831eaf2ec42466c7acc8016646e833c59beda768112",
+    "NivatTrial.ColleOrbitCofactor": "f617835e3e762172a2d932d8d1cc6dba1658fce3f77978b7bdc1fe6978052af5",
+    "NivatTrial.ColleParallelogramGeometry": "a897d9f4821d3fc8f6fffadd86fed293870f5cb2adc1cc611c0654bba7ffa7dc",
+    "NivatTrial.ColleParallelogramRows": "3639f864b8dbc405f7f3d32fafa1719ac3324bcdae2383559af9d5087eddb3b3",
+    "NivatTrial.ColleParallelogramSeeds": "0c852ec0493a3dde3e1dd08094b4d4172560728e82b4e9f32eac598fc0af7ef3",
+    "NivatTrial.ColleParallelogramWindow": "3a0e36179999ad921d7d6bf2aa7c64f224798c70abc62ab5ed19823ea71c6892",
+    "NivatTrial.CollePeriodDirections": "3b0756f33b538eeed66444c58ad93b735d535c0fe2b1060a3b964c1d537558e6",
+    "NivatTrial.CollePeriodicPhases": "0e6b1a5be1cca9d8a5658f8a90401e7f31b6f4294eb6949d49aa8696576bba37",
+    "NivatTrial.CollePeriodicReferencePair": "d9aa9ae62ff4c64010a74a234966c84c34e88f14763a007a77ef8e239a776a9e",
+    "NivatTrial.CollePeriodicRowPropagation": "b70ae911d94367f1d973abd6b4bd992d08ff35f56bed519850048ea9d3711078",
+    "NivatTrial.CollePositiveCoordinates": "9bd7b0fcf483de5e5a03c6c600b4009614a8b74213d0cc38e38824bdb721f03c",
+    "NivatTrial.ColleProperPeriodicReference": "5c47010af6a8807f730a04b0ecd176035b2a466e83764509fc83414031a41d83",
+    "NivatTrial.ColleProperReferences": "a0f441258a4a5cd4c8ca1e7d0f09d2048320576d882651e6de69b3e0f99a25ac",
+    "NivatTrial.ColleRationalDirections": "8610e9df65d1ed3a0f2dcc74d068ef98260212318cb5ac0dfe7890e6f55ed63e",
+    "NivatTrial.ColleReferenceLimits": "2881485b6886606b68fd0ae1b672a70405a30bfdb528b5d61ae82e96af881aa8",
+    "NivatTrial.ColleReferencePhaseRepeat": "2e824235e13207867a3b6b2b13cdf625222bebd17bc2d62d31e3ce6da59937d9",
+    "NivatTrial.ColleReferencePropagation": "1470322e5ca2869aaa41154738cd1f64bf07bbe4cb5c5daa4ec0e8cd4e29fdaa",
+    "NivatTrial.ColleReferenceRegion": "ce5bf8b558016b045c2bb8e5763482380f34ca50550a9c0583b9ba2a996ec11c",
+    "NivatTrial.ColleReferenceRigidity": "9f83fcaaf0f38d69e8d9dc83d59ae1b936f84d548084b6496f01cc1d0ce7a991",
+    "NivatTrial.ColleReferenceSelection": "91702f4f1af0692def1471ea2fa272416f5f258fca2a7f404aa3d78141e4ee98",
+    "NivatTrial.ColleRegionCompactness": "d2ae402757e484366fd85d6d2391c7cbed4a2e20da024bad8d8dc0fd4963fe2b",
+    "NivatTrial.ColleRegionDichotomy": "74ea8f0b324d53762710a15e8620bc94011f71f48051f785501352e95f7a5754",
+    "NivatTrial.ColleRegionalBranches": "b5b9be249a08d39435ab9eceabf405e65c04efa63d619b0c23f97e77ad0d64c0",
+    "NivatTrial.ColleRegionalConclusion": "bf023c70c406a91f3e474a1377c6bf0b07995343b636b590550683955f3b671a",
+    "NivatTrial.ColleRegionalEntry": "d0740585a5410055c1a2d69d852efca7a129c2ed7e08b1d1184cbb03170bb2f2",
+    "NivatTrial.ColleRegions": "13d37ab5d0d30670720a3cf62ba59596b89683ce982ad050b45f009089e3c8d1",
+    "NivatTrial.ColleReverseBalancedRows": "f9ebc490749e708fc1b8faa2e61d920d6bb6b86e963f687967d1151787ecaa24",
+    "NivatTrial.ColleSecondBoundaryCoordinates": "ac3fd8213416215c1a99f6f29cde5f8c824d97f59ae5cb5edc90e2993eaafadb",
+    "NivatTrial.ColleSecondBoundaryDefects": "62c3dce5e32aeae933e1614ac78ee329501156002c25d3274a2188735639a001",
+    "NivatTrial.ColleSecondBoundaryPeriod": "1b32a0b9f621970df53eeba5d7421466f77a609686d51497d9442fbf90bc1194",
+    "NivatTrial.ColleSecondBoundaryReference": "02829d098ed24cf914b8d5b38e2398c41479dbb746275b22f35aab02002d236e",
+    "NivatTrial.ColleSecondBoundaryStrip": "7fa3deb5944d851264c055156d2657d9109cb56de93633c57c85085dd650ab24",
+    "NivatTrial.ColleSeedBlockPropagation": "64d6da5f0af9d32435d8f9310e3bf10c8297745f080c0011e8fc358ea7648c2f",
+    "NivatTrial.ColleSemiAmbiguity": "5d3a7f11cbe649b31eabf00a9eb751dc878f816f8a4af2513ed1800a3fda8bb3",
+    "NivatTrial.ColleSemiAmbiguityTransport": "b322d4c4f478a71c59f53f51103ec646f834aa8ced029044e9f364a0c4d8c575",
+    "NivatTrial.ColleSlantedBlock": "9683c439524addb08787a8cc0dc291ec01ad5ff6ff9ab004a2dc09f258538c1e",
+    "NivatTrial.ColleStepExpansionGeometry": "401418e6ab0b7fb9a7cbc95da7158bb1afc6752eee98756b0e7b97d5e506a796",
+    "NivatTrial.ColleStripDichotomy": "440ec2bc19cf2d3e795f0fcf6d91a510896b25433fb5d9a0e88f126c54cfde54",
+    "NivatTrial.ColleStripInduction": "8dac6d559103328f41131e32006b186e63f98783500639967694edfebdf7553c",
+    "NivatTrial.ColleStripPeriod": "101a9bccc4d0c5612426d2cadcf7b4351e02ef149f41c75cc533f9dfd77dedcf",
+    "NivatTrial.ColleStripRigidity": "1f0b12b7844486b177df4fb2d535be0ec9fd47cd24b8044b9630ba8217b4a03d",
+    "NivatTrial.ColleTailWords": "7c0b2f9c94918c88241adecb9679e22292c02657d0a6ed598af6ef4aaf8e785c",
+    "NivatTrial.ColleTopReferencePropagation": "9f54d3ba9656eba9141d761bf18037b396b88ab99f307fc795c430ee64fd41d0",
+    "NivatTrial.ColleVertexGeometry": "5bda51e41e2a07e20b74e75c6d36759f0b95652250fdc2364cd58f34f2a2b5b3",
+    "NivatTrial.ColleWedgePeriod": "2d01c069bea7929a5bf1bca23001530ef94395c9592565d8cc672b186ef55d59",
+    "NivatTrial.ColleWedgeRecurrence": "53c5965b4ce7124c4354001c1f14c43150fbf0592503a0f1ede7bcff279dafbf",
+    "NivatTrial.ColleWedgeReference": "afd6134a5a07176e97730b35cb5cf94b4489880004cd9ce058e0849df1f37ae4",
+    "NivatTrial.ColleWindowWidth": "4de08ed6fa37ba9dc9e8862fc6b84be9ee863be546985fc42e3fb154ae8a07e2",
+    "NivatTrial.ColleWitnessHalfPlane": "9dfe1111fd32205c0f87867b12b83c0f43c6da969fd0130eb0d3c77fb7434cd3",
+    "NivatTrial.ColleZonotopeEnvelope": "7666ed584b2a2b18a539a2f598b49a68f0fcee22695d6f29d47306fd6e8dabac",
+    "NivatTrial.ColleZonotopePlacement": "f2d8333c7f5d040f81863883ab07dc170493c20d1565579df2eeafd426ebb66b",
+    "NivatTrial.Components": "4856a0fe88e3c8dbe5d8c5abc3a05c147ab1bb1ac869737e9afea67230ea65f0",
+    "NivatTrial.Confinement": "b6ffa5d7296a5c330c8d3765f83e0ebf41808b581c3b21f93be4ddba78da21be",
+    "NivatTrial.ConvexSupport": "623ff6d94e76a070daa396c6a50afb5ce93f50d043489afefc7ff47abaefea10",
+    "NivatTrial.Dichotomy": "656f251d5e51e572713795f1d6577b722e4f218a9cea27ad02212e20b3086e41",
+    "NivatTrial.Differences": "b2b8cecb6cd2322ff3be731bfedb531953f894d667c81225c07dd20431cf3666",
+    "NivatTrial.DirectionalElimination": "1b24018a19935392469906a0693ec28f7c4b6adafcc01f6d79e1f31510e95335",
+    "NivatTrial.Divisibility": "549e0e93a10e1013a19962e124fa270c917a1bfc8b7fdfb19fd81b675be1168d",
+    "NivatTrial.Dynamics": "ea63ac471ac39ada15843df5cc911f3786b077da9dc3f59014509ae379780454",
+    "NivatTrial.ExternalInputs": "def3920bd1a8832432c8a2313cd61b68817e40a48138e5a230e005b5319577e5",
+    "NivatTrial.FiniteDetermination": "33449d1445b7f0ef3a3bbfd6858c7e43504d1dd9f20397d8b5e6ec3e9839b87a",
+    "NivatTrial.FiniteIncrementFibers": "5a4436637790c95f0ab5971ff36f22350ee0be6cc93fef0e8a1e55d15869b5bc",
+    "NivatTrial.FirstCase": "d23b76641a5d05bd5e6130c4ef4dee2c42f39db9a5f683e7a027684ee4d7abf9",
+    "NivatTrial.FirstHalfPlane": "cf91491e8b376d435b6b93debf6509a9ea415ecc71af6155aad53cede3f8dfdc",
+    "NivatTrial.GeneratingWindows": "485ed0a79b545cdabe5375e679b2961c99891d754255129ba8b5841bda562818",
+    "NivatTrial.Geometry": "934ae64588fb4b2f8c24350884f3c850025c2cd567a7d3e5fb8ed55677d8743b",
+    "NivatTrial.GlobalSpectrum": "01cddd2c2cfe48b7dc0b701e4732a5ec741e7f75b41c964a279413030491e6ab",
+    "NivatTrial.HalfPlane": "17eca116b4a3e70aff003a06e4e5b6a846e4200ce4fb40e2f48be796104b382b",
+    "NivatTrial.HalfPlaneLimit": "48c7e6fc28702d1c7a91f6e9ddedce1acb2c1ce4e39ecf769f428222163227a4",
+    "NivatTrial.HorizontalCoordinates": "ed3d6a6e405f67b7933fb32e8b9a10641b42dff052de43788748577ec00e5563",
+    "NivatTrial.HullIntegerDecomposition": "cb90c5c3738e40b6536ac32191965371ae1ed0464593c9ab960c2b61fdfd69e5",
+    "NivatTrial.IncrementSupport": "ba168d8474c1b672d02d5846cbf8d0e81cd1977804b8ffa4092365b93ad28d67",
+    "NivatTrial.IntegerAnnihilator": "bc891aaf1fb5b3d10861cabfbb16f413f2bb27887afb9f74bc40998337d88e28",
+    "NivatTrial.IntegerDecomposition": "eed5e2474f6d245989d41ea186e3eab15cd264fec6bdfd76cbd1c1593e4f6d6a",
+    "NivatTrial.IntegerDecompositionOrder": "bdca1c17df52b127105d2f00d29b82fa561a2cbc25e32ebdd5fc6a07868a077e",
+    "NivatTrial.IntegerIntegration": "dfe4be12d6d053799601e97c16314c71baa413e03061b43155add4f52740fac6",
+    "NivatTrial.IntegerPowerReduction": "21822d0ec844dfa9263fd646ba73b4d678930298f0907ba8fb303d58eea813ad",
+    "NivatTrial.Isolation": "d1112ee42210b35b43552af70edba65ece966664530ecf6ff6197534f4fb57d4",
+    "NivatTrial.JointFiberLimits": "bb08d666a27c6d710dd1cc311d5f82688a4c93b7f7a09d407e27a33ed049eb31",
+    "NivatTrial.KariMoutot": "862efe83d402cc60431aa3ae002477ef63ba0f190e520f8c22253535ecea6366",
+    "NivatTrial.KariSzabados": "fa17e5da8cc0554ca8ea9909dd7deafade91829d80b5be1625e0fb16d1d58b0d",
+    "NivatTrial.LatticeCoordinates": "65a6e8361ec0e3a82eb1e2a5435ea8a85813f9e656c22d7225ea6afb2072b10b",
+    "NivatTrial.LatticePolygon": "cd6ac3e7ef56ea6adfb943b46e0e159334bd8bcf58d760414a3ccbdd0383ad30",
+    "NivatTrial.LaurentAction": "2854a996d76a1b896d33cd35ae15300c1367f1d91e6d9b73b3a6d291f13eb85f",
+    "NivatTrial.LaurentDilation": "9f9341ca4b7461468e1ccdaaef69d1cb99c82e8ee90c1ba9d360745e67d30c9c",
+    "NivatTrial.LaurentVandermonde": "b01ab3919e211fdfafcd95e8dc3a9bb2c62c323facb97e343f64d89d6d87a686",
+    "NivatTrial.MaximalIncrementFibers": "ecffb5caea38fbcd7b1d75280c238317331112c5f4e126f2ca07d9bbbbc3726b",
+    "NivatTrial.MinimalHull": "0aac7489396eea8ee5be0b0d650059797353fd54fdd88a9adbe37c62dd1ba4ed",
+    "NivatTrial.ModularReduction": "5693fb8bafba7137373b81ba933d8c74a486cd75e187f2aac9e9d01ed64ac476",
+    "NivatTrial.MorseHedlund": "495d6f4e2ce6aa94cb089b786882ef5be5fbbe655abad21e250bf72e85423a21",
+    "NivatTrial.Nonexpansive": "574a4e83fd3659e7735dbf135f0d46b0edae6896ce926c284db29c5130c70dfc",
+    "NivatTrial.NonexpansiveExistence": "4195ca0329821b5274eca55fbb237db9db0ae51d4c9d98e6000b437c524de10b",
+    "NivatTrial.NonexpansiveGeometry": "2a2327c29547434a05892bf43ff442902c2e3a4a7cc655d2c8dfc07dce544c00",
+    "NivatTrial.OneSided": "80a1b043eb918083e36345e76091d46cd9399b5175985a6ec7b7d24c9574e5cd",
+    "NivatTrial.OneSidedRecurrence": "f5c2fa6f510575ab4155b61bac85d38972e3fd7d778910d2d90d0112cfb3a702",
+    "NivatTrial.ParallelCollapse": "0a957cfc686c9d5811d9e2d286d62ad20d3e6bb16c322654f9104d4f5ebfc024",
+    "NivatTrial.Patterns": "a052faa49c4f896f09efb93f4913fc6fde155475ba9d9f539b6346c01448dca3",
+    "NivatTrial.PeriodicBandCoding": "7e8f3836307e50c5d18e8ff3ee0c2903acc885b1214a252e71af966847d51486",
+    "NivatTrial.PeriodicDifference": "ab4eb5e9c647d5c7e2b639943e1fb16df29ce09dc15904419fa2b35f59327ca0",
+    "NivatTrial.PeriodicInterface": "2d23a4940237bb1501c1e12c016cb9a1c53f72e482300cf857304d66401dbb26",
+    "NivatTrial.PeriodicNonexpansive": "216ff9c16a3c958eb95da79b3d1866e4849df40629bb7729ad0665aa189d0526",
+    "NivatTrial.PeriodicSubshift": "79b6d202226f7960373f6fccdcc7a542838d9e28e7bd7e09dbbe73f16d5f6d01",
+    "NivatTrial.Periodicity": "6bb1c2faa83e1560d0c1abec7016fbc90f83c21e90fa25f8a80e388e363aea3f",
+    "NivatTrial.Quadratic": "4922689e7869a3647b4b63443a58080daaf7ab5e6cbe3eb0c5431d87ee3acab5",
+    "NivatTrial.QuotientFactors": "3274cfb59f361edc1e0694d825f28e7489d36e715c2647c7afd8010b737a0727",
+    "NivatTrial.QuotientIdeals": "47ca9c94bf4e7861c224cbfe3883f80efc2171e22c76c11512156b351ebae02e",
+    "NivatTrial.QuotientLinear": "149a16aad028e323fb3e23e4639354c29abfc6c8459336df7c58827c324fbd6f",
+    "NivatTrial.QuotientRelations": "06165f76778b7f26f087be2d57c196a3c613b028244600181aff266325a1e675",
+    "NivatTrial.QuotientSpanning": "ab8f0501c7740d11a18af5f618525b362303f861aecf3e09bb128baa2e6a5302",
+    "NivatTrial.QuotientSupport": "11b8de864e84a5ff860ae4611ade6c85decb8ca0436afa1a846d81a5ec0a86a1",
+    "NivatTrial.RealDirectionGeometry": "027eb642a48b2d94791e8cd2416891007f4d27ee8b94d26953096f5c4eda873d",
+    "NivatTrial.RealHalfPlaneRecurrence": "36908731fb967fd79c9bea8d2d9d00dc697066b61621d0bb7745bafddc806d02",
+    "NivatTrial.ReducedDecomposition": "244d9503fcd07b7dc80a8b4b4a0e47ec886fb319946eb9aa65052e87afda6fdc",
+    "NivatTrial.RegionGeometry": "e6b09992e9ddd60a2ed43e99b44985ac62572c6123ef513d749e66e327f34a20",
+    "NivatTrial.RegionalReduction": "af77b72d94f680a1f78f2dfd1e65c848fac532dc602686abf4c8351d26ad8a00",
+    "NivatTrial.RowDetermination": "ebc4f66bd1dca6a8eb1034f28dafba492fcc78d4341df3541829110ce2fe887f",
+    "NivatTrial.SecondHalfPlane": "21e346f436aaea9f8ae5381cd048c76acbecee02a85e3e9f4f8e895143cf4286",
+    "NivatTrial.SectorBackground": "d420a262a1989732a81d831407487d8260689b17f2d290f1083b1375a0d6f14a",
+    "NivatTrial.SeparatedFiberLimits": "ca1f99b4d962f33756f6d4d8239b199a0ef08e1004e5de9ebe3ea500669424d5",
+    "NivatTrial.Spectral": "e19ebfb25577627a631fe78ffbfac475ad706180c00e93859d002678b2456194",
+    "NivatTrial.SpectralGeometry": "eeaaeef0e6511f73ce84f88e6e69b1a964e8cc83e8d89961310cbb1df7c2fa6b",
+    "NivatTrial.Star": "607622fc41f57d7082823f990c6281490ceb9154cc966c9d4289a986e7bb52c1",
+    "NivatTrial.StarNormalization": "2f29cdbfae64caa226d8a2b3d4fe424525abee8cd32609a2ea8f5680f70e13d7",
+    "NivatTrial.StarRecurrence": "8ccddc034065b3e7958ee54ce7b0254e669527787ec22d80eeb4b12d574c14ac",
+    "NivatTrial.StarWindow": "7d933567d6265079d50a7747882e79194d38f63d6ddfed786eafc6bf67bb5534",
+    "NivatTrial.Strips": "0a38970ad62f2fc99380a94e8bd5d156f4c6e70d6fface8a345ec25cb5b3ec30",
+    "NivatTrial.SupportGeometry": "dd3669c257d2aeae9f51db73874e44fb5d46a2c5e6f6dfffaf1de320e072d338",
+    "NivatTrial.TheoremA": "0bf3b9020e044da054318e4c0b1fb99bcccd70049c1c01dd09a75409183c8e51",
+    "NivatTrial.TheoremB": "13af4657b989f1606734de97b89ae09d30f5ab5d86d8a58c8ea6fd87cf802b20",
+    "NivatTrial.TwoComponent": "b1282dd69988be3c287e185220bb8b05aeaf66a95e1950892a43ad593d974e07",
+    "NivatTrial.TwoComponentLimits": "bf9dae29231ec6c7ae014185b66e3c720fb758a0767f73712fe162366222499f",
+    "NivatTrial.Witness": "a5e05b583f70e3966a08b3da4b1409707bccb47ee184f4caf5ce8c238c3958f2",
+    "NivatTrial.WitnessTransform": "4d8e31bfb1d660b459dd58f1b6ce80eb8f6b4db02f65e155548c17b3cf543398",
+    "NivatTrial.Zonotope": "36104539baf8d0b8144ce9c9b01ae5847a93683aee16b9daf9ad122b4976635e"
+  },
+  "checks": [
+    {
+      "module": "NivatTrial.Algebra",
+      "exit_code": 0,
+      "seconds": 13.91
+    },
+    {
+      "module": "NivatTrial.Patterns",
+      "exit_code": 0,
+      "seconds": 26.43
+    },
+    {
+      "module": "NivatTrial.Geometry",
+      "exit_code": 0,
+      "seconds": 24.85
+    },
+    {
+      "module": "NivatTrial.FirstCase",
+      "exit_code": 0,
+      "seconds": 27.93
+    },
+    {
+      "module": "NivatTrial.Dynamics",
+      "exit_code": 0,
+      "seconds": 29.62
+    },
+    {
+      "module": "NivatTrial.Zonotope",
+      "exit_code": 0,
+      "seconds": 27.79
+    },
+    {
+      "module": "NivatTrial.LaurentAction",
+      "exit_code": 0,
+      "seconds": 27.07
+    },
+    {
+      "module": "NivatTrial.AvailableDirections",
+      "exit_code": 0,
+      "seconds": 27.37
+    },
+    {
+      "module": "NivatTrial.Differences",
+      "exit_code": 0,
+      "seconds": 14.95
+    },
+    {
+      "module": "NivatTrial.OneSided",
+      "exit_code": 0,
+      "seconds": 12.64
+    },
+    {
+      "module": "NivatTrial.ColleParallelogramRows",
+      "exit_code": 0,
+      "seconds": 23.02
+    },
+    {
+      "module": "NivatTrial.Quadratic",
+      "exit_code": 0,
+      "seconds": 26.87
+    },
+    {
+      "module": "NivatTrial.Periodicity",
+      "exit_code": 0,
+      "seconds": 27.98
+    },
+    {
+      "module": "NivatTrial.LatticePolygon",
+      "exit_code": 0,
+      "seconds": 26.45
+    },
+    {
+      "module": "NivatTrial.LaurentDilation",
+      "exit_code": 0,
+      "seconds": 26.09
+    },
+    {
+      "module": "NivatTrial.Strips",
+      "exit_code": 0,
+      "seconds": 25.79
+    },
+    {
+      "module": "NivatTrial.Divisibility",
+      "exit_code": 0,
+      "seconds": 28.61
+    },
+    {
+      "module": "NivatTrial.MinimalHull",
+      "exit_code": 0,
+      "seconds": 26.45
+    },
+    {
+      "module": "NivatTrial.IntegerAnnihilator",
+      "exit_code": 0,
+      "seconds": 27.06
+    },
+    {
+      "module": "NivatTrial.PeriodicSubshift",
+      "exit_code": 0,
+      "seconds": 25.98
+    },
+    {
+      "module": "NivatTrial.AffineBudget",
+      "exit_code": 0,
+      "seconds": 28.49
+    },
+    {
+      "module": "NivatTrial.MorseHedlund",
+      "exit_code": 0,
+      "seconds": 27.8
+    },
+    {
+      "module": "NivatTrial.AnnihilatorDilation",
+      "exit_code": 0,
+      "seconds": 26.23
+    },
+    {
+      "module": "NivatTrial.Background",
+      "exit_code": 0,
+      "seconds": 26.49
+    },
+    {
+      "module": "NivatTrial.BalancedWindows",
+      "exit_code": 0,
+      "seconds": 28.22
+    },
+    {
+      "module": "NivatTrial.LatticeCoordinates",
+      "exit_code": 0,
+      "seconds": 26.87
+    },
+    {
+      "module": "NivatTrial.Witness",
+      "exit_code": 0,
+      "seconds": 26.79
+    },
+    {
+      "module": "NivatTrial.PeriodicDifference",
+      "exit_code": 0,
+      "seconds": 26.5
+    },
+    {
+      "module": "NivatTrial.CoefficientField",
+      "exit_code": 0,
+      "seconds": 26.56
+    },
+    {
+      "module": "NivatTrial.Isolation",
+      "exit_code": 0,
+      "seconds": 26.65
+    },
+    {
+      "module": "NivatTrial.ConvexSupport",
+      "exit_code": 0,
+      "seconds": 26.77
+    },
+    {
+      "module": "NivatTrial.Spectral",
+      "exit_code": 0,
+      "seconds": 27.34
+    },
+    {
+      "module": "NivatTrial.HalfPlaneLimit",
+      "exit_code": 0,
+      "seconds": 25.11
+    },
+    {
+      "module": "NivatTrial.ReducedDecomposition",
+      "exit_code": 0,
+      "seconds": 24.37
+    },
+    {
+      "module": "NivatTrial.AmbiguityPropagation",
+      "exit_code": 0,
+      "seconds": 27.29
+    },
+    {
+      "module": "NivatTrial.BalancedTransforms",
+      "exit_code": 0,
+      "seconds": 25.98
+    },
+    {
+      "module": "NivatTrial.BiRecursion",
+      "exit_code": 0,
+      "seconds": 26.26
+    },
+    {
+      "module": "NivatTrial.LaurentVandermonde",
+      "exit_code": 0,
+      "seconds": 26.6
+    },
+    {
+      "module": "NivatTrial.OneSidedRecurrence",
+      "exit_code": 0,
+      "seconds": 26.54
+    },
+    {
+      "module": "NivatTrial.QuotientFactors",
+      "exit_code": 0,
+      "seconds": 27.03
+    },
+    {
+      "module": "NivatTrial.ColleMorseBound",
+      "exit_code": 0,
+      "seconds": 24.37
+    },
+    {
+      "module": "NivatTrial.HalfPlane",
+      "exit_code": 0,
+      "seconds": 23.87
+    },
+    {
+      "module": "NivatTrial.RowDetermination",
+      "exit_code": 0,
+      "seconds": 27.24
+    },
+    {
+      "module": "NivatTrial.IntegerPowerReduction",
+      "exit_code": 0,
+      "seconds": 26.07
+    },
+    {
+      "module": "NivatTrial.IntegerIntegration",
+      "exit_code": 0,
+      "seconds": 26.24
+    },
+    {
+      "module": "NivatTrial.Nonexpansive",
+      "exit_code": 0,
+      "seconds": 26.52
+    },
+    {
+      "module": "NivatTrial.QuotientIdeals",
+      "exit_code": 0,
+      "seconds": 26.28
+    },
+    {
+      "module": "NivatTrial.Components",
+      "exit_code": 0,
+      "seconds": 26.08
+    },
+    {
+      "module": "NivatTrial.WitnessTransform",
+      "exit_code": 0,
+      "seconds": 23.05
+    },
+    {
+      "module": "NivatTrial.BalancedPropagation",
+      "exit_code": 0,
+      "seconds": 27.36
+    },
+    {
+      "module": "NivatTrial.IntegerDecomposition",
+      "exit_code": 0,
+      "seconds": 26.17
+    },
+    {
+      "module": "NivatTrial.GeneratingWindows",
+      "exit_code": 0,
+      "seconds": 26.59
+    },
+    {
+      "module": "NivatTrial.QuotientSupport",
+      "exit_code": 0,
+      "seconds": 26.79
+    },
+    {
+      "module": "NivatTrial.NonexpansiveGeometry",
+      "exit_code": 0,
+      "seconds": 27.54
+    },
+    {
+      "module": "NivatTrial.HorizontalCoordinates",
+      "exit_code": 0,
+      "seconds": 25.93
+    },
+    {
+      "module": "NivatTrial.Confinement",
+      "exit_code": 0,
+      "seconds": 26.43
+    },
+    {
+      "module": "NivatTrial.Dichotomy",
+      "exit_code": 0,
+      "seconds": 25.52
+    },
+    {
+      "module": "NivatTrial.QuotientLinear",
+      "exit_code": 0,
+      "seconds": 60.31
+    },
+    {
+      "module": "NivatTrial.ParallelCollapse",
+      "exit_code": 0,
+      "seconds": 25.38
+    },
+    {
+      "module": "NivatTrial.ColleAmbiguity",
+      "exit_code": 0,
+      "seconds": 26.09
+    },
+    {
+      "module": "NivatTrial.SupportGeometry",
+      "exit_code": 0,
+      "seconds": 26.49
+    },
+    {
+      "module": "NivatTrial.NonexpansiveExistence",
+      "exit_code": 0,
+      "seconds": 27.17
+    },
+    {
+      "module": "NivatTrial.ColleLeftwardCoordinates",
+      "exit_code": 0,
+      "seconds": 26.23
+    },
+    {
+      "module": "NivatTrial.TwoComponent",
+      "exit_code": 0,
+      "seconds": 29.03
+    },
+    {
+      "module": "NivatTrial.Star",
+      "exit_code": 0,
+      "seconds": 23.97
+    },
+    {
+      "module": "NivatTrial.QuotientRelations",
+      "exit_code": 0,
+      "seconds": 24.0
+    },
+    {
+      "module": "NivatTrial.BinomialDirections",
+      "exit_code": 0,
+      "seconds": 25.64
+    },
+    {
+      "module": "NivatTrial.ColleGenerating",
+      "exit_code": 0,
+      "seconds": 25.79
+    },
+    {
+      "module": "NivatTrial.RegionGeometry",
+      "exit_code": 0,
+      "seconds": 26.23
+    },
+    {
+      "module": "NivatTrial.PeriodicInterface",
+      "exit_code": 0,
+      "seconds": 26.74
+    },
+    {
+      "module": "NivatTrial.FiniteDetermination",
+      "exit_code": 0,
+      "seconds": 25.63
+    },
+    {
+      "module": "NivatTrial.ColleReferencePhaseRepeat",
+      "exit_code": 0,
+      "seconds": 25.88
+    },
+    {
+      "module": "NivatTrial.GlobalSpectrum",
+      "exit_code": 0,
+      "seconds": 26.21
+    },
+    {
+      "module": "NivatTrial.QuotientSpanning",
+      "exit_code": 0,
+      "seconds": 26.56
+    },
+    {
+      "module": "NivatTrial.TwoComponentLimits",
+      "exit_code": 0,
+      "seconds": 25.95
+    },
+    {
+      "module": "NivatTrial.StarNormalization",
+      "exit_code": 0,
+      "seconds": 24.0
+    },
+    {
+      "module": "NivatTrial.SectorBackground",
+      "exit_code": 0,
+      "seconds": 24.61
+    },
+    {
+      "module": "NivatTrial.ColleVertexGeometry",
+      "exit_code": 0,
+      "seconds": 26.21
+    },
+    {
+      "module": "NivatTrial.ColleTailWords",
+      "exit_code": 0,
+      "seconds": 26.73
+    },
+    {
+      "module": "NivatTrial.ColleEnvelopeGeometry",
+      "exit_code": 0,
+      "seconds": 25.9
+    },
+    {
+      "module": "NivatTrial.IncrementSupport",
+      "exit_code": 0,
+      "seconds": 25.84
+    },
+    {
+      "module": "NivatTrial.ColleRegions",
+      "exit_code": 0,
+      "seconds": 26.03
+    },
+    {
+      "module": "NivatTrial.PeriodicBandCoding",
+      "exit_code": 0,
+      "seconds": 26.07
+    },
+    {
+      "module": "NivatTrial.KariSzabados",
+      "exit_code": 0,
+      "seconds": 25.35
+    },
+    {
+      "module": "NivatTrial.SpectralGeometry",
+      "exit_code": 0,
+      "seconds": 25.09
+    },
+    {
+      "module": "NivatTrial.StarRecurrence",
+      "exit_code": 0,
+      "seconds": 25.14
+    },
+    {
+      "module": "NivatTrial.ColleSemiAmbiguity",
+      "exit_code": 0,
+      "seconds": 27.14
+    },
+    {
+      "module": "NivatTrial.ColleMaximalEnvelope",
+      "exit_code": 0,
+      "seconds": 26.3
+    },
+    {
+      "module": "NivatTrial.ColleRegionCompactness",
+      "exit_code": 0,
+      "seconds": 26.41
+    },
+    {
+      "module": "NivatTrial.RealHalfPlaneRecurrence",
+      "exit_code": 0,
+      "seconds": 26.02
+    },
+    {
+      "module": "NivatTrial.FirstHalfPlane",
+      "exit_code": 0,
+      "seconds": 25.76
+    },
+    {
+      "module": "NivatTrial.FiniteIncrementFibers",
+      "exit_code": 0,
+      "seconds": 26.41
+    },
+    {
+      "module": "NivatTrial.HullIntegerDecomposition",
+      "exit_code": 0,
+      "seconds": 26.19
+    },
+    {
+      "module": "NivatTrial.ColleProperReferences",
+      "exit_code": 0,
+      "seconds": 26.5
+    },
+    {
+      "module": "NivatTrial.StarWindow",
+      "exit_code": 0,
+      "seconds": 25.93
+    },
+    {
+      "module": "NivatTrial.ColleHalfStrip",
+      "exit_code": 0,
+      "seconds": 25.58
+    },
+    {
+      "module": "NivatTrial.ColleFiniteEnvelope",
+      "exit_code": 0,
+      "seconds": 26.31
+    },
+    {
+      "module": "NivatTrial.ColleEnvelopeRecession",
+      "exit_code": 0,
+      "seconds": 25.92
+    },
+    {
+      "module": "NivatTrial.RealDirectionGeometry",
+      "exit_code": 0,
+      "seconds": 25.44
+    },
+    {
+      "module": "NivatTrial.SeparatedFiberLimits",
+      "exit_code": 0,
+      "seconds": 25.1
+    },
+    {
+      "module": "NivatTrial.MaximalIncrementFibers",
+      "exit_code": 0,
+      "seconds": 25.62
+    },
+    {
+      "module": "NivatTrial.ColleReferenceSelection",
+      "exit_code": 0,
+      "seconds": 26.52
+    },
+    {
+      "module": "NivatTrial.SecondHalfPlane",
+      "exit_code": 0,
+      "seconds": 26.56
+    },
+    {
+      "module": "NivatTrial.TheoremA",
+      "exit_code": 0,
+      "seconds": 26.31
+    },
+    {
+      "module": "NivatTrial.ColleBalancedRows",
+      "exit_code": 0,
+      "seconds": 25.63
+    },
+    {
+      "module": "NivatTrial.ColleLongFaces",
+      "exit_code": 0,
+      "seconds": 25.62
+    },
+    {
+      "module": "NivatTrial.ColleEnvelopeRays",
+      "exit_code": 0,
+      "seconds": 26.21
+    },
+    {
+      "module": "NivatTrial.ColleHalfPlanePeriod",
+      "exit_code": 0,
+      "seconds": 26.54
+    },
+    {
+      "module": "NivatTrial.JointFiberLimits",
+      "exit_code": 0,
+      "seconds": 25.89
+    },
+    {
+      "module": "NivatTrial.PeriodicNonexpansive",
+      "exit_code": 0,
+      "seconds": 25.58
+    },
+    {
+      "module": "NivatTrial.RegionalReduction",
+      "exit_code": 0,
+      "seconds": 20.98
+    },
+    {
+      "module": "NivatTrial.ColleInterfaceAmbiguity",
+      "exit_code": 0,
+      "seconds": 25.46
+    },
+    {
+      "module": "NivatTrial.ColleHalfStripEnvelope",
+      "exit_code": 0,
+      "seconds": 26.9
+    },
+    {
+      "module": "NivatTrial.ColleZonotopeEnvelope",
+      "exit_code": 0,
+      "seconds": 26.13
+    },
+    {
+      "module": "NivatTrial.ColleEnvelopeTranslation",
+      "exit_code": 0,
+      "seconds": 25.88
+    },
+    {
+      "module": "NivatTrial.ColleEnvelopeLimits",
+      "exit_code": 0,
+      "seconds": 25.8
+    },
+    {
+      "module": "NivatTrial.ColleBoundaryStripGeometry",
+      "exit_code": 0,
+      "seconds": 26.0
+    },
+    {
+      "module": "NivatTrial.ColleStripRigidity",
+      "exit_code": 0,
+      "seconds": 23.81
+    },
+    {
+      "module": "NivatTrial.DirectionalElimination",
+      "exit_code": 0,
+      "seconds": 23.71
+    },
+    {
+      "module": "NivatTrial.ColleBoundaryPropagation",
+      "exit_code": 0,
+      "seconds": 26.76
+    },
+    {
+      "module": "NivatTrial.ColleZonotopePlacement",
+      "exit_code": 0,
+      "seconds": 26.45
+    },
+    {
+      "module": "NivatTrial.ColleEnvelopeExpansion",
+      "exit_code": 0,
+      "seconds": 25.54
+    },
+    {
+      "module": "NivatTrial.ColleFiniteDefectLimits",
+      "exit_code": 0,
+      "seconds": 25.9
+    },
+    {
+      "module": "NivatTrial.ColleWedgeRecurrence",
+      "exit_code": 0,
+      "seconds": 25.93
+    },
+    {
+      "module": "NivatTrial.ColleBoundaryRecenter",
+      "exit_code": 0,
+      "seconds": 26.54
+    },
+    {
+      "module": "NivatTrial.CollePeriodicPhases",
+      "exit_code": 0,
+      "seconds": 26.3
+    },
+    {
+      "module": "NivatTrial.KariMoutot",
+      "exit_code": 0,
+      "seconds": 26.11
+    },
+    {
+      "module": "NivatTrial.ColleFirstBoundaryMinimum",
+      "exit_code": 0,
+      "seconds": 26.39
+    },
+    {
+      "module": "NivatTrial.ColleMaximalTranslation",
+      "exit_code": 0,
+      "seconds": 21.36
+    },
+    {
+      "module": "NivatTrial.ColleActualHalfStrip",
+      "exit_code": 0,
+      "seconds": 25.55
+    },
+    {
+      "module": "NivatTrial.ColleErosionSupport",
+      "exit_code": 0,
+      "seconds": 25.69
+    },
+    {
+      "module": "NivatTrial.ColleEnvelopeFiberCoding",
+      "exit_code": 0,
+      "seconds": 26.23
+    },
+    {
+      "module": "NivatTrial.ColleStepExpansionGeometry",
+      "exit_code": 0,
+      "seconds": 26.3
+    },
+    {
+      "module": "NivatTrial.ColleWedgePeriod",
+      "exit_code": 0,
+      "seconds": 26.16
+    },
+    {
+      "module": "NivatTrial.ColleGrowingEnvelopes",
+      "exit_code": 0,
+      "seconds": 26.17
+    },
+    {
+      "module": "NivatTrial.ColleOppositeDirections",
+      "exit_code": 0,
+      "seconds": 24.35
+    },
+    {
+      "module": "NivatTrial.ColleParallelogramGeometry",
+      "exit_code": 0,
+      "seconds": 25.57
+    },
+    {
+      "module": "NivatTrial.ColleGeneratingTransforms",
+      "exit_code": 0,
+      "seconds": 25.44
+    },
+    {
+      "module": "NivatTrial.ColleHullCoding",
+      "exit_code": 0,
+      "seconds": 25.58
+    },
+    {
+      "module": "NivatTrial.ColleAdjacentDirections",
+      "exit_code": 0,
+      "seconds": 26.01
+    },
+    {
+      "module": "NivatTrial.ColleAgreementExhaustion",
+      "exit_code": 0,
+      "seconds": 23.45
+    },
+    {
+      "module": "NivatTrial.ExternalInputs",
+      "exit_code": 0,
+      "seconds": 23.56
+    },
+    {
+      "module": "NivatTrial.ColleDirectionalPropagation",
+      "exit_code": 0,
+      "seconds": 26.69
+    },
+    {
+      "module": "NivatTrial.ColleMaximalSeedDefect",
+      "exit_code": 0,
+      "seconds": 26.2
+    },
+    {
+      "module": "NivatTrial.ModularReduction",
+      "exit_code": 0,
+      "seconds": 26.13
+    },
+    {
+      "module": "NivatTrial.ColleHalfStripBase",
+      "exit_code": 0,
+      "seconds": 27.43
+    },
+    {
+      "module": "NivatTrial.ColleRegionDichotomy",
+      "exit_code": 0,
+      "seconds": 25.63
+    },
+    {
+      "module": "NivatTrial.ColleDecompositionTransforms",
+      "exit_code": 0,
+      "seconds": 25.39
+    },
+    {
+      "module": "NivatTrial.ColleCaseTwoWindows",
+      "exit_code": 0,
+      "seconds": 22.01
+    },
+    {
+      "module": "NivatTrial.ColleSlantedBlock",
+      "exit_code": 0,
+      "seconds": 26.8
+    },
+    {
+      "module": "NivatTrial.ColleMaximalAgreementLimit",
+      "exit_code": 0,
+      "seconds": 26.31
+    },
+    {
+      "module": "NivatTrial.CollePeriodDirections",
+      "exit_code": 0,
+      "seconds": 25.92
+    },
+    {
+      "module": "NivatTrial.ColleWindowWidth",
+      "exit_code": 0,
+      "seconds": 26.23
+    },
+    {
+      "module": "NivatTrial.ColleRationalDirections",
+      "exit_code": 0,
+      "seconds": 26.7
+    },
+    {
+      "module": "NivatTrial.IntegerDecompositionOrder",
+      "exit_code": 0,
+      "seconds": 25.6
+    },
+    {
+      "module": "NivatTrial.ColleAmbiguousFullPatterns",
+      "exit_code": 0,
+      "seconds": 26.36
+    },
+    {
+      "module": "NivatTrial.ColleSecondBoundaryDefects",
+      "exit_code": 0,
+      "seconds": 26.82
+    },
+    {
+      "module": "NivatTrial.ColleOrbitCofactor",
+      "exit_code": 0,
+      "seconds": 26.11
+    },
+    {
+      "module": "NivatTrial.ColleCaseOne",
+      "exit_code": 0,
+      "seconds": 26.89
+    },
+    {
+      "module": "NivatTrial.ColleDirectedAgreement",
+      "exit_code": 0,
+      "seconds": 26.1
+    },
+    {
+      "module": "NivatTrial.ColleFiniteMaximalTranslation",
+      "exit_code": 0,
+      "seconds": 25.73
+    },
+    {
+      "module": "NivatTrial.ColleParallelogramWindow",
+      "exit_code": 0,
+      "seconds": 25.71
+    },
+    {
+      "module": "NivatTrial.ColleCoordinateTransport",
+      "exit_code": 0,
+      "seconds": 25.74
+    },
+    {
+      "module": "NivatTrial.ColleDefectiveGrowingEnvelopes",
+      "exit_code": 0,
+      "seconds": 26.24
+    },
+    {
+      "module": "NivatTrial.ColleIntegerOpposite",
+      "exit_code": 0,
+      "seconds": 20.77
+    },
+    {
+      "module": "NivatTrial.ColleLocalSubshift",
+      "exit_code": 0,
+      "seconds": 25.54
+    },
+    {
+      "module": "NivatTrial.ColleBoundaryLimits",
+      "exit_code": 0,
+      "seconds": 25.54
+    },
+    {
+      "module": "NivatTrial.ColleMinimality",
+      "exit_code": 0,
+      "seconds": 25.83
+    },
+    {
+      "module": "NivatTrial.ColleFixedAgreementRegion",
+      "exit_code": 0,
+      "seconds": 25.43
+    },
+    {
+      "module": "NivatTrial.ColleRegionalBranches",
+      "exit_code": 0,
+      "seconds": 25.77
+    },
+    {
+      "module": "NivatTrial.ColleFirstBoundaryTranslation",
+      "exit_code": 0,
+      "seconds": 25.14
+    },
+    {
+      "module": "NivatTrial.CollePositiveCoordinates",
+      "exit_code": 0,
+      "seconds": 21.5
+    },
+    {
+      "module": "NivatTrial.ColleAmbiguousStrip",
+      "exit_code": 0,
+      "seconds": 26.28
+    },
+    {
+      "module": "NivatTrial.ColleAmbiguousBandBound",
+      "exit_code": 0,
+      "seconds": 27.1
+    },
+    {
+      "module": "NivatTrial.ColleReferenceLimits",
+      "exit_code": 0,
+      "seconds": 26.09
+    },
+    {
+      "module": "NivatTrial.ColleDecompositionHull",
+      "exit_code": 0,
+      "seconds": 25.76
+    },
+    {
+      "module": "NivatTrial.ColleCaseOneProperRegion",
+      "exit_code": 0,
+      "seconds": 25.7
+    },
+    {
+      "module": "NivatTrial.ColleLimitRigidity",
+      "exit_code": 0,
+      "seconds": 25.51
+    },
+    {
+      "module": "NivatTrial.ColleStripInduction",
+      "exit_code": 0,
+      "seconds": 25.39
+    },
+    {
+      "module": "NivatTrial.ColleWedgeReference",
+      "exit_code": 0,
+      "seconds": 26.15
+    },
+    {
+      "module": "NivatTrial.ColleReferenceRigidity",
+      "exit_code": 0,
+      "seconds": 25.83
+    },
+    {
+      "module": "NivatTrial.ColleAmbiguousRepeat",
+      "exit_code": 0,
+      "seconds": 26.53
+    },
+    {
+      "module": "NivatTrial.ColleCaseOneWedgeSeed",
+      "exit_code": 0,
+      "seconds": 26.97
+    },
+    {
+      "module": "NivatTrial.ColleCaseTwoAperiodic",
+      "exit_code": 0,
+      "seconds": 26.19
+    },
+    {
+      "module": "NivatTrial.ColleCaseOneNormalizedReference",
+      "exit_code": 0,
+      "seconds": 21.03
+    },
+    {
+      "module": "NivatTrial.ColleStripPeriod",
+      "exit_code": 0,
+      "seconds": 25.98
+    },
+    {
+      "module": "NivatTrial.ColleCaseOneSeedRegion",
+      "exit_code": 0,
+      "seconds": 25.37
+    },
+    {
+      "module": "NivatTrial.ColleReferenceRegion",
+      "exit_code": 0,
+      "seconds": 25.52
+    },
+    {
+      "module": "NivatTrial.ColleLocalBoundaryPropagation",
+      "exit_code": 0,
+      "seconds": 23.88
+    },
+    {
+      "module": "NivatTrial.ColleCaseOneFixedRegion",
+      "exit_code": 0,
+      "seconds": 23.35
+    },
+    {
+      "module": "NivatTrial.ColleOneSidedBoundary",
+      "exit_code": 0,
+      "seconds": 25.43
+    },
+    {
+      "module": "NivatTrial.ColleSeedBlockPropagation",
+      "exit_code": 0,
+      "seconds": 25.06
+    },
+    {
+      "module": "NivatTrial.ColleNonuniqueStrip",
+      "exit_code": 0,
+      "seconds": 25.67
+    },
+    {
+      "module": "NivatTrial.ColleOneSidedAmbiguity",
+      "exit_code": 0,
+      "seconds": 26.53
+    },
+    {
+      "module": "NivatTrial.CollePeriodicRowPropagation",
+      "exit_code": 0,
+      "seconds": 26.11
+    },
+    {
+      "module": "NivatTrial.ColleHorizontalSplice",
+      "exit_code": 0,
+      "seconds": 25.8
+    },
+    {
+      "module": "NivatTrial.ColleReverseBalancedRows",
+      "exit_code": 0,
+      "seconds": 25.83
+    },
+    {
+      "module": "NivatTrial.ColleHighestBoundaryRow",
+      "exit_code": 0,
+      "seconds": 25.58
+    },
+    {
+      "module": "NivatTrial.ColleReferencePropagation",
+      "exit_code": 0,
+      "seconds": 26.49
+    },
+    {
+      "module": "NivatTrial.ColleStripDichotomy",
+      "exit_code": 0,
+      "seconds": 20.89
+    },
+    {
+      "module": "NivatTrial.ColleSecondBoundaryPeriod",
+      "exit_code": 0,
+      "seconds": 26.16
+    },
+    {
+      "module": "NivatTrial.ColleSecondBoundaryStrip",
+      "exit_code": 0,
+      "seconds": 27.48
+    },
+    {
+      "module": "NivatTrial.ColleParallelogramSeeds",
+      "exit_code": 0,
+      "seconds": 26.49
+    },
+    {
+      "module": "NivatTrial.ColleHalfPlaneAmbiguity",
+      "exit_code": 0,
+      "seconds": 21.07
+    },
+    {
+      "module": "NivatTrial.ColleSecondBoundaryCoordinates",
+      "exit_code": 0,
+      "seconds": 25.74
+    },
+    {
+      "module": "NivatTrial.ColleTopReferencePropagation",
+      "exit_code": 0,
+      "seconds": 26.2
+    },
+    {
+      "module": "NivatTrial.ColleWitnessHalfPlane",
+      "exit_code": 0,
+      "seconds": 25.48
+    },
+    {
+      "module": "NivatTrial.ColleSemiAmbiguityTransport",
+      "exit_code": 0,
+      "seconds": 23.75
+    },
+    {
+      "module": "NivatTrial.CollePeriodicReferencePair",
+      "exit_code": 0,
+      "seconds": 24.24
+    },
+    {
+      "module": "NivatTrial.ColleActualSecondAmbiguity",
+      "exit_code": 0,
+      "seconds": 24.27
+    },
+    {
+      "module": "NivatTrial.ColleProperPeriodicReference",
+      "exit_code": 0,
+      "seconds": 24.03
+    },
+    {
+      "module": "NivatTrial.ColleSecondBoundaryReference",
+      "exit_code": 0,
+      "seconds": 23.72
+    },
+    {
+      "module": "NivatTrial.ColleRegionalEntry",
+      "exit_code": 0,
+      "seconds": 23.09
+    },
+    {
+      "module": "NivatTrial.ColleGeneralBoundaryReference",
+      "exit_code": 0,
+      "seconds": 21.48
+    },
+    {
+      "module": "NivatTrial.ColleCaseTwoConclusion",
+      "exit_code": 0,
+      "seconds": 20.64
+    },
+    {
+      "module": "NivatTrial.ColleCaseOneReflectionTransport",
+      "exit_code": 0,
+      "seconds": 20.78
+    },
+    {
+      "module": "NivatTrial.ColleCaseOneConclusion",
+      "exit_code": 0,
+      "seconds": 20.64
+    },
+    {
+      "module": "NivatTrial.ColleRegionalConclusion",
+      "exit_code": 0,
+      "seconds": 20.33
+    },
+    {
+      "module": "NivatTrial.TheoremB",
+      "exit_code": 0,
+      "seconds": 20.43
+    },
+    {
+      "module": "FinalTheoremB",
+      "exit_code": 0,
+      "seconds": 20.08
+    },
+    {
+      "module": "FinalTheoremBAxioms",
+      "exit_code": 0,
+      "seconds": 22.35
+    }
+  ],
+  "seconds": 2263.41
+}
