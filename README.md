@@ -1,6 +1,6 @@
 # Convex Nivat — Lean formalization
 
-This private repository contains a Lean formalization of the convex Nivat statement in Theorem B (Theorem 8.18) of a candidate manuscript hosted by Apex Intelligence for public verification, together with the proof dependencies used by that endpoint.
+This repository contains a Lean formalization of the convex Nivat statement in Theorem B (Theorem 8.18) of a candidate manuscript hosted by Apex Intelligence for public verification, together with the proof dependencies used by that endpoint.
 
 ## Manuscript and verification campaign
 
@@ -10,7 +10,7 @@ The platform presents the manuscripts as AI-proposed candidate proofs and solici
 
 The announced prize pool totals **RMB 100,000**: RMB 90,000 for nine professional awards across the three papers and RMB 10,000 for community awards. Each paper has separate categories for a major gap (重大漏洞), key verification (关键验证), and a breakthrough contribution (突破贡献), with RMB 10,000 allocated to each professional award. The contribution documented here is intended for consideration as **key verification (关键验证)**: an executable formal proof of the final convex Nivat statement, its required dependencies, and an explicit connection to a separately stated mathematical target.
 
-Campaign details in this section follow the supplied announcement dated 2026-09-29. See the [official announcement and rules](https://math.apexin.net/announcement) for submission requirements, expert review, deadlines, and current updates. This repository remains private; reviewers need repository access to inspect its source and CI evidence.
+Campaign details in this section follow the supplied announcement dated 2026-09-29. See the [official announcement and rules](https://math.apexin.net/announcement) for submission requirements, expert review, deadlines, and current updates.
 
 ## Mathematical target
 
@@ -36,7 +36,7 @@ lake env lean Audit.lean
 
 ## CI and evidence
 
-The GitHub Actions workflow builds the project on a fresh Ubuntu runner, runs the source checker and its negative tests, and checks the independent statement and axioms. It downloads upstream mathematical dependency caches and rebuilds all project proof modules. Build logs and audit output are stored as private workflow artifacts.
+The GitHub Actions workflow builds the project on a fresh Ubuntu runner, runs the source checker and its negative tests, and checks the independent statement and axioms. It downloads upstream mathematical dependency caches and rebuilds all project proof modules. Build logs and audit output are stored as workflow artifacts.
 
 The first successful remote verification completed on **2026-09-30**: [CI run 36665504290](https://github.com/Rogerhu12/convex-nivat-lean/actions/runs/36665504290) checked commit [`5674e77aabc7235b733b7111ad71c18b3fe5c74b`](https://github.com/Rogerhu12/convex-nivat-lean/commit/5674e77aabc7235b733b7111ad71c18b3fe5c74b). The fresh Linux build, all five checker tests, source provenance checks, and independent statement audit passed. The axiom audit covered **3,791 release declarations, including 3,182 theorem declarations**, allowing only `propext`, `Classical.choice`, and `Quot.sound`.
 
