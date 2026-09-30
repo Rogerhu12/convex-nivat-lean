@@ -191,6 +191,21 @@ def source_counts(modules: dict[str, Path]) -> tuple[list[dict], int, int]:
             sum(row["total_lines"] for row in rows))
 
 
+def validate_count_rows(actual_rows: list[dict], audited_rows: object) -> None:
+    """Compare every file's counts independently of OS-specific path order."""
+    require(isinstance(audited_rows, list), "Original audit has no file count rows")
+
+    def by_filename(rows: list[dict], label: str) -> dict[str, dict]:
+        require(all(isinstance(row, dict) and isinstance(row.get("file"), str)
+                    for row in rows), f"Malformed {label} file count row")
+        names = [row["file"] for row in rows]
+        require(len(names) == len(set(names)), f"Duplicate {label} file count row")
+        return {row["file"]: row for row in rows}
+
+    require(by_filename(actual_rows, "local") == by_filename(audited_rows, "audited"),
+            "Source line counts disagree with original audit report")
+
+
 def validate_original_report(provenance: dict, report: dict,
                              modules: dict[str, Path]) -> None:
     expected = provenance["source_sha256"]
@@ -208,10 +223,11 @@ def validate_original_report(provenance: dict, report: dict,
             provenance.get("total_lines") == total_lines,
             "Source line counts disagree with provenance")
     counts = report.get("counts")
-    require(isinstance(counts, dict) and counts.get("files") == rows and
+    require(isinstance(counts, dict) and
             counts.get("code_lines") == code_lines and
             counts.get("total_lines") == total_lines,
             "Source line counts disagree with original audit report")
+    validate_count_rows(rows, counts.get("files"))
     checks = report.get("checks")
     require(isinstance(checks, list), "Original audit has no module checks")
     successful = [item.get("module") for item in checks
