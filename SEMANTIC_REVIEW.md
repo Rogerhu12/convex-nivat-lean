@@ -8,11 +8,11 @@ Case 1 使用同一非周期配置与参考配置的有限长边窗口有向族�
 
 `PeriodicOn` 包含区域向前不变性及其上的实际值等式；区域非空另行证明，两个周期的行列式非零。区域进入性定理从这些性质和凸性推出覆盖，不另需未证的满维或无限区域假设。第二周期截取区域的非空性来自实际高度无界。
 
-具体交叉核对见 `CASE_ONE_DIRECTED_REVIEW.md` 与 `CASE_ONE_REFLECTION_REVIEW.md`。这些仍是同一实现任务内部的源码审查，不能称为第三方独立认证。所实现的 Colle 推论是下游证明使用的凸区域双独立周期，不包含原文更强的两条无界边均为 ONED 的边界分类。
+具体交叉核对见 `CASE_ONE_DIRECTED_REVIEW.md` 与 `CASE_ONE_REFLECTION_REVIEW.md`。所实现的 Colle 推论是下游证明使用的凸区域双独立周期，不包含原文更强的两条无界边均为 ONED 的边界分类。
 
-验证状态：219 模块、27,091 净行的最终闭包审计已经成功，`audit-theorem-b-unconditional.json` 为 `success: true`。221 项检查全部通过；3,777 个声明（其中 3,176 个 theorem）仅依赖标准三公理，源码哈希及闭包稳定，耗时 2,263.41 秒。`logs/FinalTheoremB/FinalTheoremBAxioms.log` 打印的实际终端类型只含有限字母表、实际配置、非空凸窗口和低模式数前提；结论是 `IsPeriodic θ`，没有外部记录或剩余数学接口。该结果与上述源码语义核对共同构成当前交付证据，但仍不称为第三方独立认证。
+验证状态：219 模块、27,091 净行的最终闭包审计已经成功，`audit-theorem-b-unconditional.json` 为 `success: true`。221 项检查全部通过；3,777 个声明（其中 3,176 个 theorem）仅依赖标准三公理，源码哈希及闭包稳定，耗时 2,263.41 秒。`logs/FinalTheoremB/FinalTheoremBAxioms.log` 打印的实际终端类型只含有限字母表、实际配置、非空凸窗口和低模式数前提；结论是 `IsPeriodic θ`，没有外部记录或剩余数学接口。
 
-以下保留历史阶段审查。“外部引用仍未形式化”“当前65模块”等旧表述仅属于其所在历史阶段，不能替代上述最新状态。
+以下按阶段保留历史审查；其中的外部输入、模块数和未完成工作均指对应快照，最终状态以上文为准。
 
 ---
 # 源码对应审查：历史记录与本轮补充
@@ -21,7 +21,7 @@ Theorem A 阶段日期：2026-09-29。该阶段报告保存在 `audit-theorem-a.
 
 审查者：本轮实现代理 `/root/trial_patterns`（GPT-6-sol / xhigh）。
 
-本文记录同一协作任务内的只读源码对应审查。审查者参与实现了 Patterns、Dynamics、Periodicity、MorseHedlund、Zonotope、LatticePolygon、SectorBackground、WitnessTransform 和 Confinement，因此这**不是第三方独立验证**。源码对应审查也不等同于论文整体正确性认证。
+本文记录同一协作任务内的只读源码对应审查。审查者参与实现了 Patterns、Dynamics、Periodicity、MorseHedlund、Zonotope、LatticePolygon、SectorBackground、WitnessTransform 和 Confinement；审查重点是 Theorem A 的论文对象、量词及关键证明依赖与源码的对应关系。
 
 ## 结论与验证状态
 
@@ -38,7 +38,7 @@ Theorem A 阶段日期：2026-09-29。该阶段报告保存在 `audit-theorem-a.
 
 数学源码在本轮审查期间冻结；本文未改写任何数学证明。
 
-全量审计完成后，另一实现代理 `/root/trial_algebra`（GPT-6-sol / xhigh）另行只读核对了 `Star.Data`、周期定义、实际模式集合、格点凸性和最终定理，与论文 §0.1–0.2 对应；未发现额外加强假设、隐藏结论前提或因计数定义造成空泛结论的具体疑点。这仍属于同一协作任务内的交叉检查。
+全量审计完成后，另一实现代理 `/root/trial_algebra`（GPT-6-sol / xhigh）另行只读核对了 `Star.Data`、周期定义、实际模式集合、格点凸性和最终定理，与论文 §0.1–0.2 对应；未发现额外加强假设、隐藏结论前提或因计数定义造成空泛结论的具体疑点。
 
 ## 检查覆盖
 
@@ -51,27 +51,27 @@ Theorem A 阶段日期：2026-09-29。该阶段报告保存在 `audit-theorem-a.
 
 ## 与论文的数学路线差异
 
-- **两种频谱定义尚未建立字面等价。** 论文 §2.2 取 `σ ∈ {+,−}`、`ϵ ∈ {L,R}` 的四族颜色差场频谱并集；当前 `GlobalSpectrum.frequencies` 只取两个符号的 isolated−pureRight 差场频谱并集。当前证明对该实际谱证明了非空、保谱编码、整除、两个符号的消去、真实支撑预算和见证约束，足以推出 Theorem A。但源码没有额外证明这个辅助谱定义等于论文的四族谱，不能把它描述为逐定义原样翻译。
+- **两种频谱定义尚未建立字面等价。** 论文 §2.2 取 `σ ∈ {+,−}`、`ϵ ∈ {L,R}` 的四族颜色差场频谱并集；当前 `GlobalSpectrum.frequencies` 只取两个符号的 isolated−pureRight 差场频谱并集。当前证明对该实际谱证明了非空、保谱编码、整除、两个符号的消去、真实支撑预算和见证约束，足以推出 Theorem A。
 - 公共方向周期选择满足分量及全部尾场周期性的任意正共倍数，没有实现论文书写的最小可取倍数。当前论证不使用最小性；论文 Remark 1.4 也允许这样的周期选择。
 - §3 用实际有限缺陷论证代替全局扇区排序；§5.2 用实际最大理想商域排除公共零点和 projector 张成论证，代替原文的 Nullstellensatz/CRT 组织方式。
 - §6 对 signed zonotope 系数逐项选整数端点，从而直接构造两个整数点，代替一般格点多边形的 unimodular triangulation。此证明不把三角剖分或整数分解性质作为假设。
 
-这些差异是证明路线差异，未发现它们导致当前最终结论缺失所需前提。全文逐 lemma 覆盖则不能由本次审查声称。
+这些差异是证明路线差异，未发现它们导致该阶段 Theorem A 结论缺失所需前提。本次审查覆盖 Theorem A 所需链，未逐条核验论文其他引理。
 
 ## 范围边界
 
-上述历史审查以 §§0–7 的 Theorem A 链为目标，当时尚未完成 §8/Theorem B 归约。当前内部归约已经完成，外部引用仍未形式化；详见下节。
+上述 2026-09-29 阶段审查以 §§0–7 的 Theorem A 链为目标，当时尚未完成 §8/Theorem B 归约。随后内部归约完成时，外部引用尚未形式化；详见下一历史阶段。
 
-现有 Dynamics、Periodicity 和 MorseHedlund 包含可复用的轨道闭包、模式计数、有限状态、共同周期及一维 Morse–Hedlund 证明。当时尚缺的 balanced-set 几何、D.7 歧义传播和 D.1 两分量拼装已在本轮实现，以下单列其审查范围。
+该阶段的 Dynamics、Periodicity 和 MorseHedlund 包含可复用的轨道闭包、模式计数、有限状态、共同周期及一维 Morse–Hedlund 证明。随后补齐的 balanced-set 几何、D.7 歧义传播和 D.1 两分量拼装的审查范围如下。
 
 
 ## 第 8 节与附录 D 的补充审查（2026-09-30）
 
-前文保留 Theorem A 阶段的审查记录。当前工作已补齐 D.1 和第 8 节内部归约。
+在以下 65 模块阶段，D.1 和第 8 节内部归约已经补齐。
 
 本轮全量审计共 67 项全部通过（65 个数学模块、聚合入口、公理审查），`audit-report.json` 的 `success` 为 `true`，固定副本为 `audit-theorem-b-conditional.json`。覆盖 2,213 个项目声明，其中 1,780 个 theorem 声明（含自动生成声明）；全部传递公理仅为 `propext`、`Classical.choice`、`Quot.sound`。四个终端定理单独打印了类型与公理；Theorem B 的外部记录参数仍清晰出现在类型中。源码扫描无 `sorry`、`admit`、自定义 `axiom` 或 `native_decide`；审计前后模块集合与源码哈希一致。审计于 2026-09-29 16:20:58 UTC 开始（本地 2026-09-30），耗时 1,041.67 秒。
 
-两位参与实现的 GPT-6-sol / xhigh 子代理分别做了只读交叉审查，主代理检查了最终集成与实际类型。它们仍属于同一协作任务，不是第三方独立验证。
+该阶段由两位参与实现的 GPT-6-sol / xhigh 子代理分别做只读交叉审查，主代理检查最终集成与实际类型。
 
 ### 检查结果
 
@@ -88,35 +88,36 @@ Theorem A 阶段日期：2026-09-29。该阶段报告保存在 `audit-theorem-a.
 
 ### 引用接口与来源边界
 
-`KariSzabados` 对应本文 8.4 的分解后果。子代理对 [Kari–Szabados 预印本](https://arxiv.org/pdf/1605.05929) pp.10–12 的 Lemma 14/15 与 Theorem 13 证明作了局部抽查，报告固定因子分解及整数递推支持任意整数场、可能无界分量的量词。该抽查不构成整篇外部证明的验证。
+`KariSzabados` 对应本文 8.4 的分解后果。子代理抽查了 [Kari–Szabados 预印本](https://arxiv.org/pdf/1605.05929) pp.10–12 的 Lemma 14/15 与 Theorem 13，报告固定因子分解及整数递推支持任意整数场、可能无界分量的量词。
 
-`CollePeriodicRegion` 是本文 8.6–8.7 **合并后的区域推论输入**，包括原文从 overlap 周期转成向前区域周期的几何说明。子代理抽查了 [Colle 预印本](https://arxiv.org/pdf/1909.08195) 的 §4.1 与 Case 1–2，报告同阶前提、所需非周期极限和周期区域的来源相符，未见额外矩形窗口假设。已检预印本的编号与本文所列引用编号不同；未逐页核验发表版，不能把这一编号差异直接算作数学错误。ONED、完整区域提取论证和全部传递引用并未在 Lean 中证明。
+在该阶段，`CollePeriodicRegion` 是本文 8.6–8.7 **合并后的区域推论输入**，包括原文从 overlap 周期转成向前区域周期的几何说明。子代理抽查了 [Colle 预印本](https://arxiv.org/pdf/1909.08195) 的 §4.1 与 Case 1–2，报告同阶前提、所需非周期极限和周期区域的来源相符，未见额外矩形窗口假设。已检预印本的编号与本文所列引用编号不同；发表版未逐页核验。该阶段的 ONED、完整区域提取论证和全部传递引用尚未在 Lean 中证明。
 
-因此，最终 `TheoremB.periodic_of_low_convex_complexity` 仍是以 `ExternalInputs.Results` 为前提的条件定理。来源抽查、源码语义审查、Lean 编译及公理检查是不同层次的证据。尤其是，`#print axioms` 只列标准三项不会消除定理参数中的外部结果。
+因此，在该 65 模块快照中，`TheoremB.periodic_of_low_convex_complexity` 是以 `ExternalInputs.Results` 为前提的条件定理；该参数实际出现在终端类型中。来源抽查、源码语义审查、Lean 编译及公理检查分别记录了不同层次的证据。
 
-新增部分使用的路线调整详见 `PROOF_MAP.md`。其中 8.8 只证明所需存在式阈值，没有声明精确阈值公式；整项工作不声称论文每个中间引理的逐字形式化。
-# 最新外部边界审查（2026-09-30）
+该阶段新增部分的路线调整详见 `PROOF_MAP.md`；其中 8.8 证明了所需存在式阈值，未实现原文精确阈值公式。
 
-以下正文保留历史阶段审查。本次新增的 Kari–Szabados 证明已经消除原同名输入，`Results` 只剩 Colle 区域字段。`audit-kari-checkpoint.json` 对该阶段的 76 模块、12,043 净行完成 78 项检查，2,347 声明／1,899 theorem 的传递公理仅标准三项，源码哈希稳定。此结论只覆盖报告记录的源码快照。
+# 历史阶段：外部边界审查（2026-09-30）
+
+该阶段新增的 Kari–Szabados 证明消除了原同名输入，`Results` 当时只剩 Colle 区域字段。`audit-kari-checkpoint.json` 对该阶段的 76 模块、12,043 净行完成 78 项检查，2,347 声明／1,899 theorem 的传递公理仅标准三项，源码哈希稳定。
 
 此后新增的 `KariMoutot` 顶层直接量化实际有限值整数配置和非零 Laurent 消去子，未接受方向对称性或有限纤维结论作为参数。`ColleOppositeDirections.exists_opposite_nonexpansive_of_finite_range` 对同样的实际配置及消去子证明“非双周期 ⇒ 存在相反 ONED”。`OneSidedNonexpansive` 的定义量化实际 `languageHull` 中两个不同配置在真实闭半平面的一致性；没有预设方向有理或周期区域存在。
 
-8.6 证明路线中，双周期极限的 proper 半平面界面只能先推出“非双周期”；随后产品消去子使其具有沿边界的单周期。这种界面本身不能充当 8.7 所需的“非周期配置”。当前实现保留这一区别，区域提取仍未完成。
+8.6 证明路线中，双周期极限的 proper 半平面界面只能先推出“非双周期”；随后产品消去子使其具有沿边界的单周期。这种界面本身不能充当 8.7 所需的“非周期配置”。在该阶段，区域提取尚未完成。
 
-8.6 已接入 TheoremB 源码，并成为剩余 Colle 输入的显式前提。新快照逐文件验证与整链审计分开记录；不能把旧 12,043 行审计扩大解释为覆盖后续所有文件。最终定理类型仍有 `external : Results`，所以还不是无外部数学前提的结果。
+在该阶段，8.6 已接入 TheoremB 源码，剩余 Colle 输入仍是显式前提；当时的最终定理类型含有 `external : Results`。12,043 行审计对应前述 Kari–Szabados 检查点，8.6 接入后的模块验证另行记录。
 
-`ColleEnvelopeGeometry`/`ColleMaximalEnvelope` 的有限法向凸包络不是自动等同原文 E(U)-enveloped：原文还要求各边格点长度下界，当前基础几何不把这一要求藏进定义或省略后声称完成。`ColleMinimality` 的方向极限排除则使用真实更短整数分解给出矛盾，未借入未证的 KS Cor24。
+`ColleEnvelopeGeometry`/`ColleMaximalEnvelope` 在该阶段建立了有限法向凸包络；原文 E(U)-enveloped 还要求各边格点长度下界，这一附加条件需要另行证明。`ColleMinimality` 的方向极限排除使用真实更短整数分解给出矛盾。
 
 ---
 
 ## Case 2 定向语义审读（后续进度，2026-09-30）
 
-GPT-6-sol / xhigh 子代理对 `ColleCaseTwoConclusion` 及新引用传播链进行了只读审读，root 检查实际编译与终端类型。未发现本次新增链的对象替换、阈值符号错误或前提逃逸。此结论限于该链，不是全仓库或第三方审计。
+GPT-6-sol / xhigh 子代理对 `ColleCaseTwoConclusion` 及新引用传播链进行了只读审读，root 检查实际编译与终端类型。此次核对未发现该链的对象替换、阈值符号错误或前提逃逸。
 
 - 最终输出是 `aperiodic_region_of_defective_patches` 的同一个 `y, hy, hnot`。周期参考 `q` 只传递区域内颜色等式，没有替换实际非周期配置。
 - 撤销 `shift a p` 使用 `z-a`，高行阈值为 `lo+a₂`；保向坐标公式 `det u (f z)=P*z₂` 将门槛变成 `P*lo`。
 - 最终 `K=R∩{det u≥b}` 的非空性来自区域高度无界，凸性来自凸区域与半平面的交。`-u` 与 `M k` 都明确保持 K，行列式为 `-M det u k≠0`。
 - Q 的四角及整个格点胞腔确实来自实际凸窗口。余数类覆盖、删边运行、共同尾周期和每条高水平行的连续种子均内部证明。上下两条边的长度次序通过两个实际传播朝向处理，未留为顶层假设。
-- 顶层 `hpatch` 正是实际 `actual_regional_dichotomy` 的右分支；`hproper` 来自参考选择并以同一分解方向定向。`CaseTwoEndpointAudit.lean` 成功检查该现有编译闭包中 2,715 个声明、2,309 个 theorem，仅标准三公理，并打印实际顶层类型。此检查没有重新编译整个依赖闭包，不能代替运行中的固定快照审计。
+- 顶层 `hpatch` 正是实际 `actual_regional_dichotomy` 的右分支；`hproper` 来自参考选择并以同一分解方向定向。`CaseTwoEndpointAudit.lean` 成功检查该现有编译闭包中 2,715 个声明、2,309 个 theorem，仅标准三公理，并打印实际顶层类型。这是局部入口检查；完整闭包审计见本文开头的最终记录。
 
-Case 1 尚未完成。首个整数楔层坏点可能只是角点附近的有限缺陷，不能推出任意远的半歧义；初版角链的粗包含界也不能代替原文精确半群扩张区域。当前在修正精确角几何并证明生成窗与消去子的边界传播。即使局部带 margin 的传播引理编译成功，margin 尚未从实际区域推出时仍不是完整 Claim 4.7。
+在该历史阶段，Case 1 尚未完成。首个整数楔层坏点可能只是角点附近的有限缺陷，不能推出任意远的半歧义；初版角链的粗包含界也不能代替原文精确半群扩张区域。当时在修正精确角几何并证明生成窗与消去子的边界传播，局部带 margin 的传播引理仍缺少从实际区域取得 margin 的证明。最终采用的替代路线见本文开头。
